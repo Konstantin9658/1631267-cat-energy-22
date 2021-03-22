@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Костя Соколовский](https://up.htmlacademy.ru/adaptive/22/user/1631267).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
