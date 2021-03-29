@@ -30,105 +30,102 @@
     </nav>
   </header>
   <main class="page-main">
-    <section>
-      <div class="page-main__wrapper">
-        <h1 class="page-main__title">Подбор программы</h1>
-        <h2 class="page-main__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</h2>
-        <form class="page-main__form" action="https://echo.htmlacademy.ru/" method="POST">
-          <section class="page-main__form-info info-list">
-            <h3 class="visually-hidden">Информация о вашем питомце</h3>
-            <fieldset>
-              <label for="pet-name-field">
-                Имя:<sup>*</sup>
-              </label>
-              <input class="info-list__input" type="text" name="pet-name" id="pet-name-field" placeholder="Барсик"
-                autofocus required>
-              <label for="weight-field">
-                Вес (кг):<sup>*</sup>
-              </label>
-              <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="weight-field"
-                required>
-              <label for="age-field">
-                Возраст (лет):
-              </label>
-              <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="age-field">
-            </fieldset>
-          </section>
-          <section class="page-main__form-program program-list">
-            <h3 class="visually-hidden">Выбор программы</h3>
-            <fieldset>
-              <input class="program-list__radio" type="radio" name="program-option" value="Похудение"
-                id="weight-loss-field" checked>
-              <label for="weight-loss-field">
-                Похудение
-              </label>
-              <input class="program-list__radio" type="radio" name="program-option" value="Набор массы"
-                id="weight-gain-field">
-              <label for="weight-gain-field">
-                Набор массы
-              </label>
-              <input class="program-list__radio" type="radio" name="program-option" value="Не знаю (нужен Ваш совет)"
-                id="advice-field">
-              <label for="advice-field">
-                Не знаю (нужен Ваш совет)
-              </label>
-            </fieldset>
-          </section>
-          <!--Вот тут я решил не делать секции. Потому что я им не могу задать заголовок, т.к заголовок подходящий это легенда. Сделаю див, чтобы стиль общий навесить на него-->
-          <div class="page-main__form-block">
-            <fieldset>
-              <legend class="page-main__form-contacts page-main__form-block-caption">Контактные данные (владельца кота)
-              </legend>
-              <label for="email-field">
-                E-mail:<sup>*</sup>
-              </label>
-              <input class="page-main__form-data" type="email" name="email" id="email-field"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="kuklachev@gmail.com" required>
-              <label for="phone-field">
-                Телефон:<sup>*</sup>
-              </label>
-              <input class="page-main__form-data" type="tel" name="phone" id="phone-field"
-                placeholder="8 (960) 900-60-90" title="Формат: 8 (XXX) XXX-XX-XX" required>
-            </fieldset>
-          </div>
-          <div class="page-main__form-block">
-            <fieldset>
-              <legend class="page-main__form-comment page-main__form-block-caption">Комментарий</legend>
-              <label for="comment-field">
-                <textarea name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </label>
-            </fieldset>
-          </div>
-          <div class="page-main__form-block">
-            <fieldset>
-              <legend class="page-main__form-optionally page-main__form-block-caption">Дополнительно</legend>
-              <input class="page-main__form-block-checkbox" type="checkbox" name="sweetener" id="sweetener-field"
-                value="Сахарозаменитель" checked>
-              <label for="sweetener-field">
-                Сахарозаменитель
-              </label>
-              <input class="page-main__form-block-checkbox" type="checkbox" name="water" id="water-field"
-                value="Питьевая вода">
-              <label for="water-field">
-                Питьевая вода
-              </label>
-              <input class="page-main__form-block-checkbox" type="checkbox" name="milk" id="milk-field" value="Молоко">
-              <label for="milk-field">
-                Молоко
-              </label>
-              <input class="page-main__form-block-checkbox" type="checkbox" name="vitamins" id="vitamins-field"
-                value="Витамины">
-              <label for="vitamins-field">
-                Витамины
-              </label>
-            </fieldset>
-          </div>
-          <button class="page-main__form-button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
-          <span class="page-main__form-note">
-            <sup>*</sup>— Обязательные поля
-          </span>
-        </form>
-      </div>
+    <section class="page-main__wrapper">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <h2 class="page-main__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</h2>
+      <form class="page-main__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <section class="page-main__form-info info-list">
+          <h3 class="visually-hidden">Информация о вашем питомце</h3>
+          <fieldset>
+            <label for="pet-name-field">
+              Имя:<sup>*</sup>
+            </label>
+            <input class="info-list__input" type="text" name="pet-name" id="pet-name-field" placeholder="Барсик"
+              autofocus required>
+            <label for="weight-field">
+              Вес (кг):<sup>*</sup>
+            </label>
+            <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="weight-field"
+              required>
+            <label for="age-field">
+              Возраст (лет):
+            </label>
+            <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="age-field">
+          </fieldset>
+        </section>
+        <section class="page-main__form-program program-list">
+          <h3 class="visually-hidden">Выбор программы</h3>
+          <fieldset>
+            <input class="program-list__radio" type="radio" name="program-option" value="Похудение"
+              id="weight-loss-field" checked>
+            <label for="weight-loss-field">
+              Похудение
+            </label>
+            <input class="program-list__radio" type="radio" name="program-option" value="Набор массы"
+              id="weight-gain-field">
+            <label for="weight-gain-field">
+              Набор массы
+            </label>
+            <input class="program-list__radio" type="radio" name="program-option" value="Не знаю (нужен Ваш совет)"
+              id="advice-field">
+            <label for="advice-field">
+              Не знаю (нужен Ваш совет)
+            </label>
+          </fieldset>
+        </section>
+        <div class="page-main__form-block">
+          <fieldset>
+            <legend class="page-main__form-contacts page-main__form-block-caption">Контактные данные (владельца кота)
+            </legend>
+            <label for="email-field">
+              E-mail:<sup>*</sup>
+            </label>
+            <input class="page-main__form-data" type="email" name="email" id="email-field"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="kuklachev@gmail.com" required>
+            <label for="phone-field">
+              Телефон:<sup>*</sup>
+            </label>
+            <input class="page-main__form-data" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90"
+              title="Формат: 8 (XXX) XXX-XX-XX" required>
+          </fieldset>
+        </div>
+        <div class="page-main__form-block">
+          <fieldset>
+            <legend class="page-main__form-comment page-main__form-block-caption">
+              <label for="comment-field">Комментарий</label>
+            </legend>
+            <textarea name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+        </div>
+        <div class="page-main__form-block">
+          <fieldset>
+            <legend class="page-main__form-optionally page-main__form-block-caption">Дополнительно</legend>
+            <input class="page-main__form-block-checkbox" type="checkbox" name="sweetener" id="sweetener-field"
+              value="Сахарозаменитель" checked>
+            <label for="sweetener-field">
+              Сахарозаменитель
+            </label>
+            <input class="page-main__form-block-checkbox" type="checkbox" name="water" id="water-field"
+              value="Питьевая вода">
+            <label for="water-field">
+              Питьевая вода
+            </label>
+            <input class="page-main__form-block-checkbox" type="checkbox" name="milk" id="milk-field" value="Молоко">
+            <label for="milk-field">
+              Молоко
+            </label>
+            <input class="page-main__form-block-checkbox" type="checkbox" name="vitamins" id="vitamins-field"
+              value="Витамины">
+            <label for="vitamins-field">
+              Витамины
+            </label>
+          </fieldset>
+        </div>
+        <button class="page-main__form-button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+        <span class="page-main__form-note">
+          <sup>*</sup>— Обязательные поля
+        </span>
+      </form>
     </section>
     <article class="collaboration">
       <h2 class="visually-hidden">Партнерство</h2>
@@ -151,17 +148,17 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <section class="main-footer__logo">
+      <section class="main-footer__block logo">
         <h2 class="visually-hidden">Логотип интернет-магазина "CAT ENERGY"</h2>
-        <a class="main-footer__logo-link" href="#">
+        <a class="logo__link" href="#">
           <img src="img/logo/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
         </a>
       </section>
-      <section class="main-footer__social">
+      <section class="main-footer__block social">
         <h2 class="visually-hidden">Мы в социальных сетях!</h2>
-        <ul class="main-footer__social-list">
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link" href="#">
+        <ul class="social__list">
+          <li class="social__list-item social__icon">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
               <svg role="img" aria-label="Логотип ВКонтакте" width="23" height="16" viewbox="0 0 23 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -170,8 +167,8 @@
               </svg>
             </a>
           </li>
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link" href="#">
+          <li class="social__list-item social__icon">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Instagram</span>
               <svg role="img" aria-label="Логотип Instagram" width="16" height="16" viewbox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -180,8 +177,8 @@
               </svg>
             </a>
           </li>
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link" href="#">
+          <li class="social__list-item social__icon">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Facebook</span>
               <svg role="img" aria-label="Логотип Facebook" width="22" height="22" viewbox="0 0 22 22" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -192,12 +189,12 @@
           </li>
         </ul>
       </section>
-      <section class="main-footer__copyright">
+      <section class="main-footer__block copyright">
         <h2 class="visually-hidden">Разработчики</h2>
-        <a class="main-footer__developed" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span>HTML Academy</span>
         </a>
-        <a class="main-footer__developed" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg role="img" aria-label="Логотип HTML Academy" width="27" height="34" viewbox="0 0 27 34" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
