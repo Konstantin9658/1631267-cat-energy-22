@@ -4,143 +4,219 @@
 <head>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
-      <a class="header__logo" href="#">
-        <img src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
-      </a>
-      <a class="header__logo-name" href="#">
-        <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__button main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <div class="main-nav__wrapper main-nav__menu">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <a class="page-header__logo" href="#">
+      <img src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
+      <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle--active" type="button" aria-label="Открыть меню"></button>
+      <button class="main-nav__toggle main-nav__toggle--" aria-label="Закрыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
-    <section class="adv">
-      <div class="adv__block container">
-        <h1 class="adv__title">Функциональное питание для котов</h1>
-        <p class="adv__slogan">Занялся собой? Займись котом!</p>
+    <section class="page-main__wrapper">
+      <h1 class="page-main__title">Каталог продукции</h1>
+      <div class="card card-content">
+        <img class="card-content__pic" src="img/catalog/catalog-chicken-small.png" width="140" height="112" alt="Корм CAT ENERGY со вкусом Курицы. Массой 500 гр.">
+        <table class="product-info product">
+          <caption class="product__name">Cat Energy<br> PRO 500 г</caption>
+          <tr class="product__weight">
+            <!--Не лезут в голову классы для td. А может они не нужны? У меня что то масло масленное получается-->
+            <!--Сейчас в голову пришло :) А что если дать название продукт__дата? Или такое не приветствуется?-->
+            <td class="">Масса</td>
+            <td class="">500 г</td>
+          </tr>
+          <tr class="product__taste">
+            <td class="">Вкус</td>
+            <td class="">Курица</td>
+          </tr>
+          <tr class="product__price">
+            <td class="">Цена</td>
+            <td class="">700 Р.</td>
+          </tr>
+        </table>
+        <a class="card__link" href="#">Заказать</a>
       </div>
-      <div class="container">
-        <img class="adv__pic" src="img/index-can.png" width="280" height="270" alt="Пример продукции CAT ENERGY">
-        <a class="adv__button" href="form.html">Подобрать программу</a>
+      <div class="card card-content">
+        <img class="card-content__pic" src="img/catalog/catalog-chicken-big.png" width="140" height="112" alt="Корм CAT ENERGY со вкусом Курицы. Массой 1 кг.">
+        <table class="product-info product">
+          <caption class="product__name">Cat Energy<br> PRO 1000 г</caption>
+          <tr class="product__weight">
+            <td class="">Масса</td>
+            <td class="">1000 г</td>
+          </tr>
+          <tr class="product__taste">
+            <td class="">Вкус</td>
+            <td class="">Курица</td>
+          </tr>
+          <tr class="product__price">
+            <td class="">Цена</td>
+            <td class="">1000 Р.</td>
+          </tr>
+        </table>
+        <a class="card__link" href="#">Заказать</a>
+      </div>
+      <div class="card card-content">
+        <img class="card-content__pic" src="img/catalog/catalog-fish-small.png" width="140" height="112" alt="Корм CAT ENERGY со вкусом Рыбы. Массой 500 гр.">
+        <table class="product-info product">
+          <caption class="product__name">Cat Energy<br> PRO 500 г</caption>
+          <tr class="product__weight">
+            <td class="">Масса</td>
+            <td class="">500 г</td>
+          </tr>
+          <tr class="product__taste">
+            <td class="">Вкус</td>
+            <td class="">Рыба</td>
+          </tr>
+          <tr class="product__price">
+            <td class="">Цена</td>
+            <td class="">700 Р.</td>
+          </tr>
+        </table>
+        <a class="card__link" href="#">Заказать</a>
+      </div>
+      <div class="card card-content">
+        <img class="card-content__pic" src="img/catalog/catalog-fish-big.png" width="140" height="112" alt="Корм CAT ENERGY со вкусом Рыбы. Массой 1 кг.">
+        <table class="product-info product">
+          <caption class="product__name">Cat Energy<br> PRO 1000 г</caption>
+          <tr class="product__weight">
+            <td class="">Масса</td>
+            <td class="">500 г</td>
+          </tr>
+          <tr class="product__taste">
+            <td class="">Вкус</td>
+            <td class="">Рыба</td>
+          </tr>
+          <tr class="product__price">
+            <td class="">Цена</td>
+            <td class="">1000 Р.</td>
+          </tr>
+        </table>
+        <a class="card__link" href="#">Заказать</a>
+      </div>
+      <div class="card card-content">
+        <img class="card-content__pic" src="img/catalog/catalog-buckwheat-small.png" width="140" height="112" alt="Корм CAT ENERGY со вкусом Гречки. Массой 500 гр.">
+        <table class="product-info product">
+          <caption class="product__name">Cat Energy<br> Slim 500 г</caption>
+          <tr class="product__weight">
+            <td class="">Масса</td>
+            <td class="">500 г</td>
+          </tr>
+          <tr class="product__taste">
+            <td class="">Вкус</td>
+            <td class="">Гречка</td>
+          </tr>
+          <tr class="product__price">
+            <td class="">Цена</td>
+            <td class="">400 Р.</td>
+          </tr>
+        </table>
+        <a class="card__link" href="#">Заказать</a>
+      </div>
+      <div class="card card-content">
+        <img class="card-content__pic" src="img/catalog/catalog-buckwheat-big.png" width="140" height="112" alt="Корм CAT ENERGY со вкусом Гречки. Массой 1 кг.">
+        <table class="product-info product">
+          <caption class="product__name">Cat Energy<br> Slim 1000 г</caption>
+          <tr class="product__weight">
+            <td class="">Масса</td>
+            <td class="">500 г</td>
+          </tr>
+          <tr class="product__taste">
+            <td class="">Вкус</td>
+            <td class="">Гречка</td>
+          </tr>
+          <tr class="product__price">
+            <td class="">Цена</td>
+            <td class="">700 Р.</td>
+          </tr>
+        </table>
+        <a class="card__link" href="#">Заказать</a>
+      </div>
+      <div class="card card-content">
+        <img class="card-content__pic" src="img/catalog/catalog-rice-small.png" width="140" height="112" alt="Корм CAT ENERGY со вкусом Риса. Массой 500 гр.">
+        <table class="product-info product">
+          <caption class="product__name">Cat Energy<br> Slim 500 г</caption>
+          <tr class="product__weight">
+            <td class="">Масса</td>
+            <td class="">500 г</td>
+          </tr>
+          <tr class="product__taste">
+            <td class="">Вкус</td>
+            <td class="">Рис</td>
+          </tr>
+          <tr class="product__price">
+            <td class="">Цена</td>
+            <td class="">500 Р.</td>
+          </tr>
+        </table>
+        <a class="card__link" href="#">Заказать</a>
+      </div>
+      <div class="show-more">
+        <h2 class="show-more__title">Показать еще 100500 товаров</h2>
+        <p class="show-more__desc">На самом деле вкусов гораздо больше!</p>
+        <a class="show-more__link" href="#">Показать все</a>
       </div>
     </section>
-    <article class="nutrition-program container">
-      <h2 class="visually-hidden">Программы питания</h2>
-      <div class="nutrition-program__wrapper">
-        <div class="nutrition-program__diet slim">
-          <h2 class="nutrition-program__title">Похудение</h2>
-          <p class="nutrition-program__description">
-            Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по деревьям? Пора на диету! Cat<br>
-            Energy Slim поможет вашему<br> питомцу сбросить лишний вес.
-          </p>
-          <a class="nutrition-program__link" href="catalog.html">
-            каталог slim
-          </a>
-        </div>
-        <div class="nutrition-program__diet weight">
-          <h2 class="nutrition-program__title">Набор массы</h2>
-          <p class="nutrition-program__description">
-            Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет<br> вашему коту
-            нарастить<br> необходимые мышцы!
-          </p>
-          <a class="nutrition-program__link" href="catalog.html">
-            каталог pro
-          </a>
-        </div>
-      </div>
+    <section class="additional-goods">
+      <!--Добавить центровщика-->
+      <h2 class="additional-goods__title">Дополнительные товары</h2>
+      <table class="product">
+        <caption class="product__name">Сахарозаменитель</caption>
+        <tr class="product__row">
+          <td>1 упаковка (100 г)</td>
+          <td>200 Р.</td>
+        </tr>
+      </table>
+      <table class="product">
+        <caption class="product__name">Питьевая вода</caption>
+        <tr class="product__row">
+          <td>5 литров</td>
+          <td>50 Р.</td>
+        </tr>
+      </table>
+      <table class="product">
+        <caption class="product__name">Молоко</caption>
+        <tr class="product__row">
+          <td>1 литр</td>
+          <td>100 Р.</td>
+        </tr>
+      </table>
+      <table class="product">
+        <caption class="product__name">Витамины</caption>
+        <tr class="product__row">
+          <td>1 упаковка (30 г)</td>
+          <td>300 Р.</td>
+        </tr>
+      </table>
+    </section>
+    <article class="promo">
+      <!--Добавить центровщика-->
+      <h2 class="visually-hidden">Акции</h2>
+      <p class="promo__desc">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
     </article>
-    <section class="features container">
-      <h2 class="features__title">Как это работает</h2>
-      <ol class="features__list">
-        <li class="features__item features__item--structure">
-          <p class="features__description">
-            Функциональное питание<br> содержит только полезные<br> питательные вещества.
-          </p>
-        </li>
-        <li class="features__item features__item--cooking">
-          <p class="features__description">
-            Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.
-          </p>
-        </li>
-        <li class="features__item features__item--eat">
-          <p class="features__description">
-            Замените один-два приема<br> обычной еды на наше<br> функциональное питание.
-          </p>
-        </li>
-        <li class="features__item features__item--alarm">
-          <p class="features__description">
-            Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!
-          </p>
-        </li>
-      </ol>
-    </section>
-    <section class="example">
-      <div class="container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
-          результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.
-        </p>
-        <dl class="example__block">
-          <div class="example__results">
-            <dt class="example__annotation">
-              снижение<br> веса
-            </dt>
-            <dd class="example__result">
-              5 кг
-            </dd>
-          </div>
-          <div class="example__results">
-            <dt class="example__annotation">
-              затрачено<br> времени
-            </dt>
-            <dd class="example__result">
-              60 дней
-            </dd>
-          </div>
-        </dl>
-        <p class="example__total">Затраты на питание: 15 000 руб.</p>
-        <img class="example__img example__img--before" src="img/cat-before.png" width="311" height="232"
-          alt="Упитанный кот Борис до того как сел на диету Cat Energy">
-        <img class="example__img example__img--after" src="img/cat-after.png" width="251" height="240"
-          alt="Стройный кот Борис после двух месяцев диеты от Cat Energy">
-        <div class="example__diff">
-          <span class="example__before">Было</span>
-          <div class="example__before-after">
-            <!--Тут потом сделаем переключалку, я так планирую :)-->
-          </div>
-          <span class="example__after">Стало</span>
-        </div>
-      </div>
-
-    </section>
     <article class="collaboration">
       <h2 class="visually-hidden">Партнерство</h2>
-      <div class="collaboration__wrapper container">
+      <div class="collaboration__wrapper">
         <p class="collaboration__text">
-          Приглашаем<br> к сотрудничеству<br> дилеров!
+          Приглашаем к сотрудничеству дилеров!
         </p>
         <address class="collaboration__address">
           ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
@@ -156,7 +232,7 @@
     </article>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper container">
+    <div class="main-footer__wrapper">
       <section class="main-footer__block logo">
         <h2 class="visually-hidden">Логотип интернет-магазина "CAT ENERGY"</h2>
         <a class="logo__link" href="#">
@@ -217,6 +293,7 @@
       </section>
     </div>
   </footer>
+
 </body>
 
 </html>
