@@ -1,0 +1,103 @@
+.example {
+  background-color: #eaeaea;
+  min-height: 705px;
+  margin-top: 42px;
+}
+
+.example__title {
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+
+  margin: 0;
+  padding: 27px 0 33px;
+  }
+
+.example__description {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #444444;
+  margin: 0;
+}
+
+.example__block {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+}
+
+.example__results {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/icon/example__results.svg") no-repeat;
+    width: 124px;
+    height: 64px;
+    left: -45px;
+  }
+}
+
+.example__result {
+  margin: 0;
+  order: 1;
+}
+
+.example__annotation {
+  order: 2;
+}
+
+.example__total {
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 44px;
+}
+
+.example__img {
+  background-color: transparent;
+  width: 100%;
+}
+
+.example__before,
+.example__after {
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.example__diff {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 17px;
+  width: 228px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 17px;
+}
+
+.example__before-after {
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  border-radius: 6px;
+}

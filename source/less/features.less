@@ -1,0 +1,81 @@
+.features {
+  margin-top: 27px;
+}
+
+.features__title {
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+  margin: 0;
+
+}
+
+.features__list {
+  list-style: none;
+  margin-top: 38px;
+  padding: 0;
+  display: grid;
+  row-gap: 20px;
+  min-height: 300px;
+}
+
+.features__description {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 4px 10px 4px 70px;
+  color: #444444;
+}
+
+.features__item {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #68B738;
+  }
+}
+
+.features__item--structure {
+  &::before {
+    content: url("../img/icon/icon_structure.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+}
+
+.features__item--cooking {
+  &::before {
+    content: url("../img/icon/icon_cooking.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+}
+
+.features__item--eat {
+  &::before {
+    content: url("../img/icon/icon_eat.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+}
+
+.features__item--alarm {
+  &::before {
+    content: url("../img/icon/icon_alarm.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+}
