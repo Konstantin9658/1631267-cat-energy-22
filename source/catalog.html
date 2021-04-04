@@ -9,27 +9,30 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
-      <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--active" type="button" aria-label="Открыть меню"></button>
-      <button class="main-nav__toggle main-nav__toggle--" aria-label="Закрыть меню"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <a class="page-header__logo" href="#">
+        <img src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
+      </a>
+      <a class="page-header__logo-name" href="#">
+        <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__button main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="main-nav__wrapper main-nav__menu">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="page-main__wrapper">
