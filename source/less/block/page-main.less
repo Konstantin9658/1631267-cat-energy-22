@@ -1,0 +1,165 @@
+.text {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.input {
+  flex-basis: 61%;
+  flex-grow: 1;
+  min-height: 45px;
+  padding: 5px 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.caption {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 35px;
+  padding-right: 17px;
+  padding-left: 20px;
+}
+
+.page-main__wrapper {
+  display: grid;
+  border-top: 1px solid #d9d9d9;
+}
+
+.page-main__title {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+
+  padding-top: 27px;
+  padding-bottom: 37px;
+}
+
+.page-main__subtitle {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #000000;
+  padding-bottom: 39px;
+  margin: 0;
+}
+
+.page-main__form-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.page-main__form-info,
+.page-main__form-program {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.page-main__form-info label {
+  .text;
+  color: #444444;
+  width: auto;
+  padding-right: 14px;
+}
+
+.page-main__form-info input {
+  .text;
+  color: #444444;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 12px;
+
+  .input;
+
+  &:last-child {
+    margin-bottom: 27px;
+  }
+}
+
+.page-main__form-program .page-main__form-group {
+  display: grid;
+  margin: 22px 0 25px;
+}
+
+.page-main__form-program label {
+  .text;
+  color: #222222;
+  width: 100%;
+  padding-left: 45px;
+  position: relative;
+
+  &:not(:last-child) {
+    padding-bottom: 19px;
+  }
+}
+
+.page-main__form-block {
+  margin-top: 24px;
+}
+
+.page-main__form-block-caption {
+  .caption;
+}
+
+.page-main__form-block .page-main__form-group {
+  border-top: 2px solid #68b738;
+}
+
+.page-main__form-block .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.page-main__form-group textarea {
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+  .text;
+  padding: 10px 10px;
+  border: 1px solid #e7e7e7;
+}
+
+.page-main__form-button {
+  width: 100%;
+  border: none;
+  background-color: #68b738;
+  cursor: pointer;
+  min-height: 40px;
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 34px;
+}
+
+.page-main__form-note {
+  font-family: @arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 21px 0 32px;
+}

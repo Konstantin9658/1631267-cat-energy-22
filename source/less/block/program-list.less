@@ -1,0 +1,25 @@
+.program-list__radio {
+  display: none;
+
+  & + label::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    left: 0;
+    top: -5px;
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #68b738;
+    left: 0;
+    transform: translateX(66%) translateY(26%);
+  }
+}

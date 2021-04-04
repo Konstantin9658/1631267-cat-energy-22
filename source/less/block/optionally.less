@@ -1,0 +1,32 @@
+.optionally .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 19px;
+  padding-left: 46px;
+}
+
+.optionally__list ~ label {
+  .text;
+  position: relative;
+}
+
+.optionally__list {
+  display: none;
+
+  & + label::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cdcdcd;
+    left: -46px;
+    top: -5px;
+  }
+
+  &:checked + label::after {
+    content: url("../../img/icon/icon-check.svg");
+    position: absolute;
+    left: -42px;
+    top: 0;
+  }
+}

@@ -5,7 +5,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -16,7 +16,7 @@
 }
 
 .example__description {
-  font-family: "Arial", sans-serif;
+  font-family: @arial;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -28,36 +28,51 @@
 
 .example__block {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 25px 0;
 }
 
 .example__results {
   display: flex;
   flex-direction: column;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background: url("../img/icon/example__results.svg") no-repeat;
-    width: 124px;
-    height: 64px;
-    left: -45px;
-  }
+  align-items: center;
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 
 .example__result {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
   margin: 0;
-  order: 1;
+  position: relative;
+  padding: 10px 15px;
 }
 
 .example__annotation {
+  font-family: @arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
   order: 2;
+  background-color: #eaeaea;
+  width: 90px;
+  height: 10px;
+  padding: 42px 15px;
+  position: absolute;
 }
 
 .example__total {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -75,7 +90,7 @@
 
 .example__before,
 .example__after {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
