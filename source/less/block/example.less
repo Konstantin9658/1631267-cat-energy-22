@@ -5,7 +5,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -16,7 +16,7 @@
 }
 
 .example__description {
-  font-family: "Arial", sans-serif;
+  font-family: @arial;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -28,36 +28,51 @@
 
 .example__block {
   display: flex;
-  justify-content: space-around;
-  margin: 25px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 0 35px;
 }
 
 .example__results {
   display: flex;
   flex-direction: column;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background: url("../img/icon/example__results.svg") no-repeat;
-    width: 124px;
-    height: 64px;
-    left: -45px;
-  }
+  align-items: center;
+  width: 124px;
+  min-height: 54px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 
 .example__result {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
   margin: 0;
-  order: 1;
+  position: relative;
+  padding: 11px 15px;
 }
 
 .example__annotation {
+  font-family: @arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
   order: 2;
+  background-color: #eaeaea;
+  width: 90px;
+  height: 10px;
+  padding: 45px 15px;
+  position: absolute;
 }
 
 .example__total {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -70,26 +85,32 @@
 
 .example__img {
   background-color: transparent;
-  width: 100%;
+  width: 97%;
+  height: 229px;
+  display: none;
+}
+
+.example__img--active {
+  display: block;
 }
 
 .example__before,
 .example__after {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .example__diff {
   display: flex;
   justify-content: space-around;
-  margin-top: 17px;
-  width: 228px;
+  margin-top: 33px;
+  width: 214px;
   height: 40px;
 }
 

@@ -6,17 +6,17 @@
 
 .collaboration__text {
   margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #111111;
 }
 
 .collaboration__address {
-  font-family: "Arial", sans-serif;
+  font-family: @arial;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -27,4 +27,8 @@
 .collaboration__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.collaboration--form {
+  background-color: #f2f2f2;
 }

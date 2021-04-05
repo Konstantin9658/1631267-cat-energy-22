@@ -8,7 +8,7 @@
 }
 
 .nutrition-program__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -21,7 +21,7 @@
 }
 
 .nutrition-program__description {
-  font-family: "Arial", sans-serif;
+  font-family: @arial;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -60,7 +60,7 @@
 }
 
 .nutrition-program__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -70,24 +70,24 @@
   position: relative;
 
   padding-left: 19px;
-  padding-top: 15px;
+  padding-top: 18px;
 
   &::after {
     content: "";
     position: absolute;
     width: 18px;
     height: 2px;
-    top: 21px;
-    left: 112px;
+    top: 25px;
+    left: 121px;
     background-color: black;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 16px;
-    left: 130px;
-    border: 6px solid transparent;
-    border-left: 9px solid #000000;
+    top: 21px;
+    left: 138px;
+    border: 5px solid transparent;
+    border-left: 7px solid #000000;
   }
 }
