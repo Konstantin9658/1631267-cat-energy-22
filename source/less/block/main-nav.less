@@ -21,6 +21,7 @@
   &:first-child {
     border-top: 1px solid #e6e6e6;
   }
+
   &:not(:last-child) {
     border-bottom: 1px solid #e6e6e6;
   }
@@ -29,14 +30,13 @@
 .page-header__button {
   border: none;
   appearance: none;
-  background: transparent;
   cursor: pointer;
-  background: url("../img/icon/icon-humburger.svg") no-repeat;
+  background: transparent url("../img/icon/icon-humburger.svg") no-repeat;
   width: 24px;
   height: 18px;
 
   &--opened {
-    background: url("../img/icon/icon-closed.svg") no-repeat;
+    background: transparent url("../img/icon/icon-closed.svg") no-repeat;
     width: 20px;
     height: 20px;
   }
