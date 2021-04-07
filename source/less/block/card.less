@@ -1,0 +1,32 @@
+.resize-text(@font-size, @line-height) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.card {
+  min-height: 112px;
+  margin-top: 19px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__name {
+  text-align: left;
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  .resize-text(16px, 20px);
+
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 6px;
+  letter-spacing: -0.1px;
+}
+
+.card__pic {
+  width: 140px;
+  height: 112px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}

@@ -1,0 +1,40 @@
+.additional-goods {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-top: 2px solid #68b738;
+    top: 15px;
+    right: 0;
+    left: 0;
+    z-index: -2;
+  }
+}
+
+.additional-goods__title {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ffffff;
+  width: max-content;
+  margin: 25px 0 36px;
+  z-index: 2;
+  padding-right: 21px;
+  padding-left: 20px;
+}
+
+.additional-goods__name {
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 13px 0;
+}
