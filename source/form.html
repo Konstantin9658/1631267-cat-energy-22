@@ -10,16 +10,17 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo" href="index.html">
+    <div class="page-header__wrapper container">
+      <a class="page-header__logo" href="#">
         <img src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
       </a>
-      <a class="page-header__logo-name" href="index.html">
+      <a class="page-header__logo-name" href="#">
         <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
       </a>
+      <button class="page-header__button page-header__button--opened" type="button" aria-label="Открыть меню"></button>
+    </div>
       <nav class="main-nav">
-        <button class="main-nav__button main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <div class="main-nav__wrapper main-nav__menu">
+        <div class="main-nav__wrapper main-nav__menu main-nav__menu--show">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a href="index.html">Главная</a>
@@ -33,7 +34,6 @@
           </ul>
         </div>
       </nav>
-    </div>
   </header>
   <main class="page-main">
     <section class="page-main__wrapper">
@@ -123,8 +123,7 @@
               <label for="sweetener-field">
                 Сахарозаменитель
               </label>
-              <input class="optionally__list" type="checkbox" name="water" id="water-field"
-                value="Питьевая вода">
+              <input class="optionally__list" type="checkbox" name="water" id="water-field" value="Питьевая вода">
               <label for="water-field">
                 Питьевая вода
               </label>
@@ -132,8 +131,7 @@
               <label for="milk-field">
                 Молоко
               </label>
-              <input class="optionally__list" type="checkbox" name="vitamins" id="vitamins-field"
-                value="Витамины">
+              <input class="optionally__list" type="checkbox" name="vitamins" id="vitamins-field" value="Витамины">
               <label for="vitamins-field">
                 Витамины
               </label>
