@@ -6,15 +6,47 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
   display: none;
 }
 
-.main-nav__button {
+.main-nav__menu--show {
+  display: block;
+}
+
+.main-nav__item {
+  padding-bottom: 24px;
+  padding-top: 22px;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.page-header__button {
   border: none;
   appearance: none;
-  background: transparent;
+  cursor: pointer;
+  background: transparent url("../img/icon/icon-humburger.svg") no-repeat;
+  width: 24px;
+  height: 18px;
 
-  &::before {
-    content: url("../img/icon/icon-humdurger.svg");
+  &--opened {
+    background: transparent url("../img/icon/icon-closed.svg") no-repeat;
+    width: 20px;
+    height: 20px;
   }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__menu {
+  display: block;
 }

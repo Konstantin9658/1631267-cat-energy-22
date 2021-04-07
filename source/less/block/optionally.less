@@ -1,4 +1,4 @@
-.optionally .container {
+.optionally__container {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 19px;
@@ -6,7 +6,7 @@
 }
 
 .optionally__list ~ label {
-  .text;
+  .text();
   position: relative;
 }
 
@@ -24,7 +24,7 @@
   }
 
   &:checked + label::after {
-    content: url("../../img/icon/icon-check.svg");
+    content: url("../img/icon/icon-check.svg");
     position: absolute;
     left: -42px;
     top: 0;
