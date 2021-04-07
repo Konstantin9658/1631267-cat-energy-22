@@ -1,13 +1,6 @@
 .adv {
-  position: relative;
   text-align: center;
-
-  &::before {
-    content: url("../img/index-background-img.jpg");
-    position: absolute;
-    z-index: -1;
-    left: 0;
-  }
+  background: url("../img/index-background-img.jpg") no-repeat 50% 0;
 }
 
 .adv__block {
@@ -17,9 +10,9 @@
 }
 
 .adv__pic {
-  position: absolute;
-  top: 167px;
-  left: 20px;
+  position: relative;
+  top: -135px;
+  left: 0;
 }
 
 .adv__button {
@@ -38,8 +31,7 @@
   min-height: 40px;
   background-color: #68b738;
   color: #ffffff;
-  margin: 0 auto;
-  margin-top: 138px;
+  margin-top: -135px;
 }
 
 .adv__title {
