@@ -1,7 +1,49 @@
+.page-header {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 76px;
+
+    &__logo {
+      display: none;
+    }
+
+    &__logo--2 {
+      display: block;
+      background: url("../img/logo/logo-tablet.svg") no-repeat;
+      width: 174px;
+      height: 52px;
+    }
+  }
+}
+
 .page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   min-height: 66px;
+}
+
+.page-header__button {
+  border: none;
+  appearance: none;
+  cursor: pointer;
+
+  &--burger {
+    background: transparent url("../img/icon/icon-humburger.svg") no-repeat;
+    width: 24px;
+    height: 18px;
+  }
+
+  &--closed {
+    background: transparent url("../img/icon/icon-closed.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

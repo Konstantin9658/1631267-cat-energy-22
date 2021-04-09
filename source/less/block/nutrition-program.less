@@ -1,61 +1,111 @@
 .nutrition-program {
-  margin-top: 22px;
+  padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 7px;
+  }
 }
 
 .nutrition-program__wrapper {
   display: grid;
-  row-gap: 20px;
+  row-gap: 24px;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 30px;
+  }
 }
 
 .nutrition-program__title {
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
   text-transform: uppercase;
 
   margin: 0;
-  padding-top: 30px;
-  padding-left: 91px;
+
+  @media (min-width: @tablet-width) {
+    .resize-text(36px, 36px);
+  }
+
+  @media (max-width: @mobile-width-only) {
+    .resize-text(24px, 37px);
+    padding-top: 30px;
+    padding-left: 91px;
+  }
 }
 
 .nutrition-program__description {
   font-family: @arial;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  .resize-text(16px, 24px);
   color: #444444;
 
-  padding: 30px 0 22px 25px;
   margin: 0;
 
-  text-align: left;
-  border-bottom: 1px solid #d9d9d9;
+  .only-mobile {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 24px 0 52px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    .resize-text(14px, 18px);
+    padding: 30px 10px 22px 25px;
+    border-bottom: 1px solid #d9d9d9;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .nutrition-program__diet {
   background-color: #f2f2f2;
   position: relative;
-  min-height: 266px;
-}
+  min-height: max-content;
 
-.weight {
-  &::before {
-    content: url("../img/cat_weight.svg");
-    position: absolute;
-    left: 13px;
-    top: 24px;
+  @media (min-width: @tablet-width) {
+    padding: 77px 53px 10px;
+    min-height: 372px;
   }
 }
 
-.slim {
+.nutrition-program__diet-weight {
+  &::before {
+    content: url("../img/cat_weight.svg");
+    position: absolute;
+
+    @media (min-width: @tablet-width) {
+      transform: scaleX(4) scaleY(3.9);
+      right: 18%;
+      top: 45%;
+    }
+
+    @media (max-width: @mobile-width-only) {
+      left: 13px;
+      top: 24px;
+    }
+  }
+}
+
+.nutrition-program__diet-slim {
   &::before {
     content: url("../img/cat_slim.svg");
     position: absolute;
-    top: 21px;
-    left: 22px;
+
+    @media (min-width: @tablet-width) {
+      transform: scaleX(4.1) scaleY(4);
+      right: 19%;
+      top: 44%;
+    }
+
+    @media (max-width: @mobile-width-only) {
+      top: 21px;
+      left: 22px;
+    }
   }
 }
 
@@ -63,14 +113,15 @@
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
+  .resize-text(20px, 30px);
   text-transform: uppercase;
   display: block;
   position: relative;
 
-  padding-left: 19px;
-  padding-top: 18px;
+  @media (max-width: @mobile-width-only) {
+    .resize-text (16px, 16px);
+    padding: 18px 19px;
+  }
 
   &::after {
     content: "";
@@ -80,6 +131,11 @@
     top: 25px;
     left: 121px;
     background-color: black;
+
+    @media (min-width: @tablet-width) {
+      top: 14px;
+      left: 132px;
+    }
   }
 
   &::before {
@@ -89,5 +145,10 @@
     left: 138px;
     border: 5px solid transparent;
     border-left: 7px solid #000000;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      left: 150px;
+    }
   }
 }

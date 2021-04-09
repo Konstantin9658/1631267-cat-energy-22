@@ -2,6 +2,10 @@
   min-height: 114px;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 201px;
+  }
 }
 
 .collaboration__text {
@@ -13,6 +17,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: @tablet-width) {
+    .resize-text(20px, 24px);
+    padding-top: 6px;
+  }
 }
 
 .collaboration__address {
@@ -22,11 +31,32 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    .resize-text(16px, 20px);
+    text-align: end;
+  }
+}
+
+.collaboration__address-town {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .collaboration__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 71px;
+  }
 }
 
 .collaboration--form {
