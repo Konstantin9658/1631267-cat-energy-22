@@ -1,5 +1,15 @@
+.flex-center(@display, @value) {
+  display: @display;
+  align-items: @value;
+  justify-content: @value;
+}
+
 .features {
-  margin-top: 27px;
+  padding-top: 31px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+  }
 }
 
 .features__title {
@@ -10,6 +20,10 @@
   line-height: 40px;
   color: #000000;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .resize-text(60px, 60px);
+  }
 }
 
 .features__list {
@@ -19,6 +33,17 @@
   display: grid;
   row-gap: 18px;
   min-height: 300px;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    counter-reset: section;
+    list-style-type: none;
+    row-gap: 130px;
+    margin: 72px 0 99px;
+    column-gap: 59px;
+  }
 }
 
 .features__description {
@@ -30,10 +55,38 @@
   margin: 0;
   padding: 4px 5px 4px 79px;
   color: #444444;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .resize-text(16px, 24px);
+    letter-spacing: 1px;
+    padding: 111px 5px 4px 0;
+
+    .only-mobile {
+      display: none;
+    }
+  }
 }
 
 .features__item {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      counter-increment: section;
+      content: counters(section, ".") " ";
+      position: absolute;
+      .resize-text(280px, 280px);
+      color: fade(#000000, 10%);
+      top: -40px;
+      right: 75px;
+    }
+  }
 
   &::before {
     content: "";
@@ -41,41 +94,38 @@
     width: 60px;
     height: 60px;
     background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
 .features__item--structure {
   &::before {
     content: url("../img/icon/icon_structure.svg");
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .flex-center(flex, center);
   }
 }
 
 .features__item--cooking {
   &::before {
     content: url("../img/icon/icon_cooking.svg");
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .flex-center(flex, center);
   }
 }
 
 .features__item--eat {
   &::before {
     content: url("../img/icon/icon_eat.svg");
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .flex-center(flex, center);
   }
 }
 
 .features__item--alarm {
   &::before {
     content: url("../img/icon/icon_alarm.svg");
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .flex-center(flex, center);
   }
 }

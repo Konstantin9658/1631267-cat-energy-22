@@ -1,13 +1,34 @@
+.main-nav__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .main-nav__menu {
-  font-family: @oswald;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
+  @media (max-width: @mobile-width-only) {
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
 
   display: none;
+
+  @media (min-width: @tablet-width) {
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+  }
 }
 
 .main-nav__menu--show {
@@ -18,27 +39,37 @@
   padding-bottom: 24px;
   padding-top: 22px;
 
+  @media (min-width: @tablet-width) {
+    &--current a {
+      border-bottom: 2px solid #68b738;
+      height: 34px;
+      display: block;
+    }
+  }
+
+
   &:first-child {
     border-top: 1px solid #e6e6e6;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
   }
 
   &:not(:last-child) {
     border-bottom: 1px solid #e6e6e6;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
   }
-}
 
-.page-header__button {
-  border: none;
-  appearance: none;
-  cursor: pointer;
-  background: transparent url("../img/icon/icon-humburger.svg") no-repeat;
-  width: 24px;
-  height: 18px;
+  @media (min-width: @tablet-width) {
+    padding: 0;
 
-  &--opened {
-    background: transparent url("../img/icon/icon-closed.svg") no-repeat;
-    width: 20px;
-    height: 20px;
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 }
 

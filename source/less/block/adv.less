@@ -1,60 +1,109 @@
 .adv {
-  text-align: center;
-  background: url("../img/index-background-img.jpg") no-repeat 50% 0;
+  @media (max-width: @mobile-width-only) {
+    text-align: center;
+    background: url("../img/index-background-img.jpg") no-repeat 50% 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/index-can-tablet.png") no-repeat 29px 265px;
+    padding-top: 64px;
+    padding-left: 86px;
+  }
 }
 
 .adv__block {
-  background: rgba(104, 183, 56, 0.85);
-  min-width: 320px;
-  min-height: 302px;
+  @media (max-width: @mobile-width-only) {
+    background: rgba(104, 183, 56, 0.85);
+    min-width: 100%;
+    min-height: 302px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 749px;
+  }
 }
 
 .adv__pic {
-  position: relative;
-  top: -135px;
-  left: 0;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    top: -135px;
+    left: 0;
+  }
 }
 
 .adv__button {
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  .resize-text(20px, 20px);
   text-transform: uppercase;
-
+  background-color: #68b738;
+  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-width: 280px;
-  min-height: 40px;
-  background-color: #68b738;
-  color: #ffffff;
-  margin-top: -135px;
+  width: 244px;
+  min-height: 54px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    bottom: 519px;
+    left: -4px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    .resize-text(14px, 18px);
+    min-width: 100%;
+    min-height: 40px;
+    margin-top: -135px;
+  }
 }
 
 .adv__title {
   font-family: @oswald;
   font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-
-  color: #ffffff;
-
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 60px;
   margin: 0;
-  padding: 27px 10px 0;
+
+  @media (max-width: @mobile-width-only) {
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+
+    color: #ffffff;
+    margin: 0;
+    padding: 27px 10px 0;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .adv__slogan {
   font-family: @oswald;
+  .resize-text(20px, 20px);
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
-  padding-top: 25px;
+  color: #000000;
   margin: 0;
+  padding-top: 40px;
+
+
+  @media (max-width: @mobile-width-only) {
+    .resize-text(14px, 14px);
+
+    color: #ffffff;
+    padding-top: 25px;
+  }
 }
