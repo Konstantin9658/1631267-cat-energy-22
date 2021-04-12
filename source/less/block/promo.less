@@ -1,8 +1,8 @@
 .promo {
+  padding: 39px 20px 35px;
   border-top: 1px solid #ebebeb;
-  width: 280px;
   min-height: 364px;
-  background: url("../img/background-img-promo.png") no-repeat 0 39px;
+  background: url("../img/background-img-promo.png") no-repeat 50% 39px;
   position: relative;
 
   &::before {
@@ -13,6 +13,18 @@
     left: 50%;
     transform: translateX(-51%) translateY(-106%);
     top: 50%;
+
+    @media (min-width: @tablet-width) {
+      left: 20%;
+      transform: translateX(-50%) translateY(-50%);
+      top: 50%;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 69px 30px 76px;
+    min-height: 345px;
+    background: url("../img/background-img-promo-tab.png") no-repeat 50% 69px;
   }
 }
 
@@ -23,7 +35,11 @@
   .resize-text(16px, 20px);
   color: #ffffff;
   margin: 0;
-  padding: 225px 0 0;
+  padding: 186px 0 0;
   text-align: center;
   letter-spacing: 0.3px;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 0 0 421px;
+  }
 }

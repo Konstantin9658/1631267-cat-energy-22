@@ -3,11 +3,28 @@
   grid-template-columns: 1fr;
   row-gap: 19px;
   padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 123px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 104px;
+  }
 }
 
 .optionally__list ~ label {
   .text();
   position: relative;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    .resize-text(20px, 30px);
+    padding-left: 53px;
+  }
 }
 
 .optionally__list {
@@ -19,14 +36,24 @@
     width: 26px;
     height: 26px;
     border: 1px solid #cdcdcd;
-    left: -46px;
+    left: -26px;
     top: -5px;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: -6px;
+    }
   }
 
   &:checked + label::after {
     content: url("../img/icon/icon-check.svg");
     position: absolute;
-    left: -42px;
+    left: -22px;
     top: 0;
+
+    @media (min-width: @tablet-width) {
+      left: 5px;
+    }
   }
 }

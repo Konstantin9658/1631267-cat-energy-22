@@ -17,23 +17,23 @@
       <a class="page-header__logo" href="#">
         <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
       </a>
-      <button class="page-header__button page-header__button--opened" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__button page-header__button--burger" type="button" aria-label="Открыть меню"></button>
     </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper main-nav__menu main-nav__menu--show">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper main-nav__menu">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <section class="page-main__wrapper">
@@ -41,30 +41,37 @@
         <h1 class="page-main__title">Подбор программы</h1>
         <h2 class="page-main__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</h2>
       </div>
-      <form class="page-main__form" action="https://echo.htmlacademy.ru/" method="POST">
-        <section class="page-main__form-info info-list">
-          <div class="container">
+      <form class="page-main__form container" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="page-main__form--wrapper">
+          <section class="page-main__form-info">
+            <!-- <div class="container"> -->
             <h3 class="visually-hidden">Информация о вашем питомце</h3>
             <fieldset class="page-main__form-group">
-              <label for="pet-name-field">
-                Имя:<sup>*</sup>
-              </label>
-              <input class="info-list__input" type="text" name="pet-name" id="pet-name-field" value="Барсик" autofocus
-                required>
-              <label for="weight-field">
-                Вес (кг):<sup>*</sup>
-              </label>
-              <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="weight-field"
-                required>
-              <label for="age-field">
-                Возраст (лет):
-              </label>
-              <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="age-field">
+              <div class="info-list">
+                <label for="pet-name-field">
+                  Имя:<sup>*</sup>
+                </label>
+                <input class="info-list__input" type="text" name="pet-name" id="pet-name-field" value="Барсик" autofocus
+                  required>
+              </div>
+              <div class="info-list">
+                <label for="weight-field">
+                  Вес (кг):<sup>*</sup>
+                </label>
+                <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="weight-field"
+                  required>
+              </div>
+              <div class="info-list">
+                <label for="age-field">
+                  Возраст (лет):
+                </label>
+                <input class="info-list__input" type="number" min="1" max="100" step="1" value="7" id="age-field">
+              </div>
             </fieldset>
-          </div>
-        </section>
-        <section class="page-main__form-program program-list">
-          <div class="container">
+            <!-- </div> -->
+          </section>
+          <section class="page-main__form-program program-list">
+            <!-- <div class="container"> -->
             <h3 class="visually-hidden">Выбор программы</h3>
             <fieldset class="page-main__form-group">
               <input class="program-list__radio" type="radio" name="program-option" value="Похудение"
@@ -83,24 +90,30 @@
                 Не знаю (нужен Ваш совет)
               </label>
             </fieldset>
-          </div>
-        </section>
+            <!-- </div> -->
+          </section>
+        </div>
         <div class="page-main__form-block contact">
           <fieldset class="page-main__form-group">
             <legend class="page-main__form-block-caption">
               Контактные данные<br> (владельца кота)
             </legend>
-            <div class="contact__container container">
-              <label for="email-field">
-                E-mail:<sup>*</sup>
-              </label>
-              <input class="page-main__form-data" type="email" name="email" id="email-field"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="kuklachev@gmail.com" required>
-              <label for="phone-field">
-                Телефон:<sup>*</sup>
-              </label>
-              <input class="page-main__form-data" type="tel" name="phone" id="phone-field"
-                placeholder="8 (960) 900-60-90" title="Формат: 8 (XXX) XXX-XX-XX" required>
+            <div class="page-main__form--wrapper">
+              <div class="info-list">
+                <label for="email-field">
+                  E-mail:<sup>*</sup>
+                </label>
+                <input class="page-main__form-data" type="email" name="email" id="email-field"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="kuklachev@gmail.com" required>
+
+              </div>
+              <div class="info-list">
+                <label for="phone-field">
+                  Телефон:<sup>*</sup>
+                </label>
+                <input class="page-main__form-data" type="tel" name="phone" id="phone-field"
+                  placeholder="8 (960) 900-60-90" title="Формат: 8 (XXX) XXX-XX-XX" required>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -109,15 +122,15 @@
             <legend class="page-main__form-block-caption">
               <label for="comment-field">Комментарий</label>
             </legend>
-            <div class="container">
-              <textarea name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="page-main__form--wrapper">
+            <textarea name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
         </div>
         <div class="page-main__form-block optionally">
           <fieldset class="page-main__form-group">
             <legend class="page-main__form-block-caption">Дополнительно</legend>
-            <div class="optionally__container container">
+            <div class="optionally__container">
               <input class="optionally__list" type="checkbox" name="sweetener" id="sweetener-field"
                 value="Сахарозаменитель" checked>
               <label for="sweetener-field">
@@ -138,32 +151,38 @@
             </div>
           </fieldset>
         </div>
-        <div class="container">
-          <button class="page-main__form-button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
-          <span class="page-main__form-note">
-            <sup>*</sup>— Обязательные поля
-          </span>
-        </div>
+        <!-- <div class="container"> -->
+        <button class="page-main__form-button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+        <span class="page-main__form-note">
+          <sup>*</sup>— Обязательные поля
+        </span>
+        <!-- </div> -->
       </form>
     </section>
-    <article class="collaboration collaboration--form">
-      <h2 class="visually-hidden">Партнерство</h2>
-      <div class="collaboration__wrapper container">
-        <p class="collaboration__text">
-          Приглашаем к сотрудничеству дилеров!
-        </p>
-        <address class="collaboration__address">
-          ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
-        </address>
-      </div>
-    </article>
-    <article class="map">
-      <h2 class="visually-hidden">Адрес нашего офиса</h2>
-      <a class="map__popup" href="#">
-        <img src="img/location.png" width="320" height="362"
-          alt="Адрес нашего офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </a>
-    </article>
+    <section class="page-main__footer">
+      <article class="collaboration collaboration--form">
+        <h2 class="visually-hidden">Партнерство</h2>
+        <div class="collaboration__wrapper container">
+          <p class="collaboration__text">
+            Приглашаем<br> к сотрудничеству<br> дилеров!
+          </p>
+          <address class="collaboration__address">
+            <p>ул. Большая<br> Конюшенная, д. 19/8</p>
+            <p class="collaboration__address-town">Санкт-Петербург</p>
+          </address>
+        </div>
+      </article>
+      <article class="map">
+        <h2 class="visually-hidden">Адрес нашего офиса</h2>
+        <a class="map__popup" href="#">
+          <!-- <img src="img/location.png" width="320" height="362"
+          alt="Адрес нашего офиса: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"> -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858715841545!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617974069189!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </a>
+      </article>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper container">
@@ -227,6 +246,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
