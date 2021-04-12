@@ -1,0 +1,32 @@
+.info-list {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.page-main__form--wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 36px 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.info-list:last-child .info-list__input-data {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
