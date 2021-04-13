@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 7px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 82px;
+  }
 }
 
 .nutrition-program__wrapper {
@@ -12,6 +16,11 @@
 
   @media (min-width: @tablet-width) {
     row-gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -22,6 +31,10 @@
   text-transform: uppercase;
 
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 
   @media (min-width: @tablet-width) {
     .resize-text(36px, 36px);
@@ -60,6 +73,14 @@
       display: none;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 73px 0 23px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .nutrition-program__diet {
@@ -70,6 +91,12 @@
   @media (min-width: @tablet-width) {
     padding: 77px 53px 10px;
     min-height: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 77px 52px 10px;
+    min-height: 374px;
+    width: 570px;
   }
 }
 
@@ -88,6 +115,12 @@
       left: 13px;
       top: 24px;
     }
+
+    @media (min-width: @desktop-width) {
+      transform: scaleX(2) scaleY(1.9);
+      left: 33%;
+      top: 16%;
+    }
   }
 }
 
@@ -96,15 +129,21 @@
     content: url("../img/cat_slim.svg");
     position: absolute;
 
+    @media (max-width: @mobile-width-only) {
+      top: 21px;
+      left: 22px;
+    }
+
     @media (min-width: @tablet-width) {
       transform: scaleX(4.1) scaleY(4);
       right: 19%;
       top: 44%;
     }
 
-    @media (max-width: @mobile-width-only) {
-      top: 21px;
-      left: 22px;
+    @media (min-width: @desktop-width) {
+      transform: scaleX(2) scaleY(1.9);
+      left: 33%;
+      top: 14%;
     }
   }
 }

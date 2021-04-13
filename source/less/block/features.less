@@ -10,6 +10,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 71px;
+  }
 }
 
 .features__title {
@@ -44,6 +48,14 @@
     margin: 72px 0 99px;
     column-gap: 59px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: normal;
+    column-gap: normal;
+    margin-bottom: 10px;
+  }
 }
 
 .features__description {
@@ -64,7 +76,6 @@
 
   @media (min-width: @tablet-width) {
     .resize-text(16px, 24px);
-    letter-spacing: 1px;
     padding: 111px 5px 4px 0;
 
     .only-mobile {
@@ -85,6 +96,20 @@
       color: fade(#000000, 10%);
       top: -40px;
       right: 75px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 23%;
+    height: 280px;
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &::after {
+      right: -15px;
     }
   }
 

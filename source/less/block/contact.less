@@ -3,19 +3,23 @@
   color: #444444;
   width: auto;
   padding-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    .resize-text(20px, 30px);
+  }
 }
 
 .contact input {
   .text();
   color: #444444;
   border: 1px solid #e7e7e7;
-  margin-bottom: 14px;
+  min-height: 45px;
+  flex-grow: 1;
+  padding: 13px 15px;
 
-  .input();
-}
-
-.contact__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  @media (min-width: @tablet-width) {
+    .resize-text(20px, 30px);
+    min-height: 52px;
+    padding: 10px 20px;
+  }
 }

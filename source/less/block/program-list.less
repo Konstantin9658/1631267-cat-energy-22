@@ -10,6 +10,10 @@
     border-radius: 50%;
     left: 0;
     top: -5px;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+    }
   }
 
   &:checked + label::after {
@@ -21,5 +25,10 @@
     background-color: #68b738;
     left: 0;
     transform: translateX(66%) translateY(26%);
+
+    @media (min-width: @tablet-width) {
+      transform: translateY(66%);
+      left: 8px;
+    }
   }
 }
