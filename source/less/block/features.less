@@ -51,6 +51,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: normal;
     column-gap: normal;
@@ -100,16 +101,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 23%;
+    width: 20%;
     height: 280px;
-    margin-right: 30px;
 
     &:nth-child(4n) {
       margin-right: 0;
     }
 
     &::after {
-      right: -15px;
+      left: 115px;
     }
   }
 

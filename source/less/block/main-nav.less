@@ -6,22 +6,16 @@
   }
 }
 
-.main-nav {
-  @media (min-width: @desktop-width) {
-    position: relative;
-  }
-}
-
 .main-nav__wrapper--home-page {
   @media (min-width: @desktop-width) {
     &::after {
       content: "";
       position: absolute;
       background-color: fade(#68b738, 85%);
-      width: 720px;
-      height: 694px;
+      width: 50vw;
+      height: 730px;
       top: -36px;
-      left: -126px;
+      right: 0;
       z-index: -1;
     }
   }
