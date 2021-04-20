@@ -43,6 +43,16 @@
   // }
 }
 
+.page-main__grid {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 79px;
+    padding-bottom: 89px;
+    min-height: 582px;
+  }
+}
+
 .page-main__title {
   font-family: @oswald;
   font-style: normal;
@@ -65,7 +75,11 @@
   letter-spacing: 0.3px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 164px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 81px;
   }
 }
 

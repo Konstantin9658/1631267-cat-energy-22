@@ -3,8 +3,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 140px;
+    row-gap: 60px;
     padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 63px;
+    column-gap: 80px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -16,5 +25,9 @@
     width: 100%;
     min-height: 430px;
     display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
   }
 }
