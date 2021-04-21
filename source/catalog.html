@@ -11,11 +11,17 @@
 <body class="page__body">
   <header class="page-header container">
     <div class="page-header__wrapper">
-      <a class="page-header__logo page-header__logo--2" href="#">
-        <img src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img src="img/logo/logo-header-mobile.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
+        </picture>
       </a>
       <a class="page-header__logo" href="#">
-        <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
+        <picture>
+          <!-- <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта"> -->
+        </picture>
       </a>
       <button class="page-header__button page-header__button--burger" type="button" aria-label="Открыть меню"></button>
     </div>
@@ -246,55 +252,57 @@
         </div>
       </div>
     </section>
-    <div class="page-main__grid">
-      <article class="additional-goods">
-        <h2 class="additional-goods__title">Дополнительные товары</h2>
-        <div class="additional-goods__wrapper">
-          <h3 class="additional-goods__name">Сахарозаменитель</h3>
-          <table class="product-info product-info--add">
-            <tr class="product-info__row product-info__row--add">
-              <td>1 упаковка (100 г)</td>
-              <td>200 Р.</td>
-            </tr>
-          </table>
-          <a class="button-order button-order--add" href="#">Заказать</a>
-        </div>
-        <div class="additional-goods__wrapper">
-          <h3 class="additional-goods__name">Питьевая вода</h3>
-          <table class="product-info product-info--add">
-            <tr class="product-info__row product-info__row--add">
-              <td>5 литров</td>
-              <td>50 Р.</td>
-            </tr>
-          </table>
-          <a class="button-order button-order--add" href="#">Заказать</a>
-        </div>
-        <div class="additional-goods__wrapper">
-          <h3 class="additional-goods__name">Молоко</h3>
-          <table class="product-info product-info--add">
-            <tr class="product-info__row product-info__row--add">
-              <td>1 литр</td>
-              <td>100 Р.</td>
-            </tr>
-          </table>
-          <a class="button-order button-order--add" href="#">Заказать</a>
-        </div>
-        <div class="additional-goods__wrapper">
-          <h3 class="additional-goods__name">Витамины</h3>
-          <table class="product-info product-info--add">
-            <tr class="product-info__row product-info__row--add">
-              <td>1 упаковка (30 г)</td>
-              <td>300 Р.</td>
-            </tr>
-          </table>
-          <a class="button-order button-order--add" href="#">Заказать</a>
-        </div>
-      </article>
-      <article class="promo container">
-        <h2 class="visually-hidden">Акции</h2>
-        <p class="promo__desc">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
-      </article>
-    </div>
+    <section class="additional-goods">
+      <h2 class="additional-goods__title">Дополнительные товары</h2>
+      <div class="additional-goods__grid">
+        <article class="additional-goods__wrapper">
+          <div class="additional-goods__inner">
+            <h3 class="additional-goods__name">Сахарозаменитель</h3>
+            <table class="product-info product-info--add">
+              <tr class="product-info__row product-info__row--add">
+                <td>1 упаковка (100 г)</td>
+                <td>200 Р.</td>
+              </tr>
+            </table>
+            <a class="button-order button-order--add" href="#">Заказать</a>
+          </div>
+          <div class="additional-goods__inner">
+            <h3 class="additional-goods__name">Питьевая вода</h3>
+            <table class="product-info product-info--add">
+              <tr class="product-info__row product-info__row--add">
+                <td>5 литров</td>
+                <td>50 Р.</td>
+              </tr>
+            </table>
+            <a class="button-order button-order--add" href="#">Заказать</a>
+          </div>
+          <div class="additional-goods__inner">
+            <h3 class="additional-goods__name">Молоко</h3>
+            <table class="product-info product-info--add">
+              <tr class="product-info__row product-info__row--add">
+                <td>1 литр</td>
+                <td>100 Р.</td>
+              </tr>
+            </table>
+            <a class="button-order button-order--add" href="#">Заказать</a>
+          </div>
+          <div class="additional-goods__inner">
+            <h3 class="additional-goods__name">Витамины</h3>
+            <table class="product-info product-info--add">
+              <tr class="product-info__row product-info__row--add">
+                <td>1 упаковка (30 г)</td>
+                <td>300 Р.</td>
+              </tr>
+            </table>
+            <a class="button-order button-order--add" href="#">Заказать</a>
+          </div>
+        </article>
+        <article class="promo">
+          <h2 class="visually-hidden">Акции</h2>
+          <p class="promo__desc">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+        </article>
+      </div>
+    </section>
     <div class="page-main__footer">
       <article class="collaboration collaboration--form">
         <h2 class="visually-hidden">Партнерство</h2>

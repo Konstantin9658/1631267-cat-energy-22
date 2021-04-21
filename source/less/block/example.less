@@ -23,16 +23,17 @@
   font-style: normal;
   font-weight: normal;
   .resize-text(36px, 40px);
+  padding: 0 20px 35px;
 
   margin: 0;
-  padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     .resize-text(60px, 60px);
+    padding: 0 30px 63px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 0;
+    padding: 0 110px;
   }
 }
 
@@ -52,7 +53,6 @@
 
   @media (min-width: @tablet-width) {
     .resize-text(16px, 24px);
-    padding-top: 31px;
     letter-spacing: 0.2px;
 
     .only-tab {
@@ -99,7 +99,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 25px auto 35px;
+  margin: 25px 0 35px;
 
   @media (max-width: @mobile-width-only) {
     max-width: 280px;
@@ -153,8 +153,11 @@
   color: #444444;
   order: 2;
   background-color: @example-bcg-grey;
-  width: 90px;
   padding: 0 15px;
+
+  .only-mobile {
+    display: block;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: @example-bcg-tab;

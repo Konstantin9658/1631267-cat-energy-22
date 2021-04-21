@@ -1,7 +1,7 @@
 .additional-goods {
-  position: relative;
-
   @media (max-width: @mobile-width-only) {
+    position: relative;
+
     &::before {
       position: absolute;
       content: "";
@@ -16,16 +16,47 @@
 
   @media (min-width: @tablet-width) {
     border-top: 2px solid #68b738;
-    top: 92px;
-    padding: 0 30px;
+    padding: 0 30px 77px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 100px;
+    min-height: 469px;
+    padding: 0 71px;
+  }
+}
+
+.additional-goods__grid {
+  display: grid;
+  grid-template-rows: 1fr 289px;
+  row-gap: 36px;
+  padding-bottom: 37px;
+
+  @media (min-width: @tablet-width) and (max-width: 1279px) {
+    grid-template-rows: 1fr 200px;
+    row-gap: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
 .additional-goods__wrapper {
+  & .additional-goods__inner:last-child {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    height: 288px;
+    width: 895px;
+  }
+}
+
+.additional-goods__inner {
   padding: 13px 0 19px;
   border-top: 1px solid #ebebeb;
   margin: 0 20px;
@@ -34,19 +65,17 @@
     padding: 26px 37px 28px;
     min-height: 140px;
     display: grid;
-    grid-template-columns: 1fr 225px;
+    grid-template-columns: 1fr auto;
     border: 1px solid #ebebeb;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(2, 1fr) max-content;
-    width: 895px;
-    padding: 15px 0 17px;
     min-height: 72px;
-    margin-left: 80px;
     border-left: none;
     border-right: none;
+    padding: 0;
   }
 }
 
@@ -65,13 +94,12 @@
 
   @media (min-width: @tablet-width) {
     .resize-text(36px, 36px);
-    margin: -25px 0 83px;
+    margin: -25px 0 80px;
     padding-left: 36px;
     padding-right: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 41px;
     padding-left: 38px;
   }
 }

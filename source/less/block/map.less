@@ -1,13 +1,13 @@
-.map {
-  min-height: 362px;
-}
-
 .map__popup {
   display: flex;
 
   iframe {
     width: 100%;
     border: none;
-    height: 400px;
+    height: 362px;
+
+    @media (min-width: @tablet-width) {
+      height: 400px;
+    }
   }
 }

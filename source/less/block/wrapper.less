@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 60px;
-    padding: 0 30px;
+    padding: 0 30px 87px;
   }
 
   @media (min-width: @desktop-width) {
@@ -13,18 +13,21 @@
     column-gap: 80px;
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 100px;
   }
 }
 
 .wrapper__inner {
   border-top: 1px solid #ebebeb;
+  min-height: 209px;
+  padding: 20px;
 
   @media (min-width: @tablet-width) {
     border: none;
     width: 100%;
     min-height: 430px;
     display: flex;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
