@@ -109,6 +109,10 @@
     width: 366px;
     margin-top: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 67px 0 56px;
+  }
 }
 
 .example__results {
@@ -199,8 +203,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    text-align: center;
+    text-align: left;
     padding-top: 3px;
+
+    span {
+      padding-left: 63px;
+    }
 
     .only-tab {
       display: none;
