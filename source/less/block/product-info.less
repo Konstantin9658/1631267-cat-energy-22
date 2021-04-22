@@ -6,6 +6,21 @@
 .product-info {
   border-collapse: collapse;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 12px;
+    flex-grow: 1;
+
+    &--add {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--add {
+      align-self: center;
+    }
+  }
 }
 
 .product-info__row {
@@ -21,16 +36,27 @@
   @media (min-width: @tablet-width) {
     .resize-text(16px, 16px);
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 9px;
-    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-top: 6px;
   }
 
   &--add {
     .resize-text(14px, 14px);
+    padding-bottom: 3px;
 
     @media (min-width: @tablet-width) {
       .resize-text(16px, 20px);
       border: none;
+      padding: 0;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 40px;
+    }
+  }
+
+  &--add td:last-child {
+    width: 94px;
+    text-align: right;
   }
 }

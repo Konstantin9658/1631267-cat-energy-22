@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
+  <link rel="manifest" href="../manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -11,11 +15,15 @@
 <body class="page__body">
   <header class="page-header container">
     <div class="page-header__wrapper">
-      <a class="page-header__logo page-header__logo--2" href="#">
-        <img src="img/logo/logo-header.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
+      <a class="page-header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img src="img/logo/logo-header-mobile.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
+        </picture>
       </a>
       <a class="page-header__logo" href="#">
-        <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта">
+        <!-- <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта"> -->
       </a>
       <button class="page-header__button page-header__button--burger" type="button" aria-label="Открыть меню"></button>
     </div>
@@ -36,12 +44,10 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="adv">
-      <div class="adv__block container">
+    <section class="adv container">
+      <div class="adv__block">
         <h1 class="adv__title">Функциональное<br> питание для котов</h1>
         <p class="adv__slogan">Занялся собой? Займись котом!</p>
-      </div>
-      <div class="container">
         <img class="adv__pic" src="img/index-can.png" width="280" height="270" alt="Пример продукции CAT ENERGY">
         <a class="adv__button" href="form.html">Подобрать программу</a>
       </div>
@@ -100,9 +106,8 @@
       </ol>
     </section>
     <section class="example">
-      <div class="container">
         <h2 class="example__title">Живой пример</h2>
-        <div class="example--bcg">
+        <div class="example--bcg container">
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="only-desktop"> обычный корм на Cat Energy
             Slim. Отличный результат<br class="only-desktop"> без изнуряющих тренировок! При этом он не менял своих<br
@@ -127,14 +132,17 @@
                 </dd>
               </div>
             </dl>
-            <p class="example__total">Затраты на питание:<br class="only-tab"> 15 000 руб.</p>
+            <p class="example__total">Затраты на питание:<br class="only-tab"><span>15 000 руб.</span></p>
           </div>
         </div>
         <div class="example__img">
-          <img class="example__img--active" src="img/cat-before.png" width="311" height="232"
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/cat-before-big.png 1x, img/cat-before-big@2x.png 2x">
+            <img class="example__img--active" src="img/cat-before.png" width="311" height="232"
             alt="Упитанный кот Борис до того как сел на диету Cat Energy">
-          <img class="example__img--disabled" src="img/cat-after.png" width="251" height="240"
+            <img class="example__img--disabled" src="img/cat-after.png" width="251" height="240"
             alt="Стройный кот Борис после двух месяцев диеты от Cat Energy">
+          </picture>
         </div>
         <div class="example__diff container">
           <span class="example__before">Было</span>
@@ -143,7 +151,6 @@
           </div>
           <span class="example__after">Стало</span>
         </div>
-      </div>
     </section>
     <section class="page-main__footer">
       <article class="collaboration">

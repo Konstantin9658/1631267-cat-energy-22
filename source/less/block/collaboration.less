@@ -13,7 +13,7 @@
     background-color: #ffffff;
     width: 570px;
     top: 95px;
-    left: 110px;
+    left: calc((100vw - 1220px) / 2);
   }
 }
 
@@ -48,6 +48,11 @@
   @media (min-width: @tablet-width) {
     .resize-text(16px, 20px);
     text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    padding-left: 42px;
   }
 }
 

@@ -1,33 +1,32 @@
 .adv {
   @media (max-width: @mobile-width-only) {
     text-align: center;
-    background: url("../img/index-background-img.jpg") no-repeat 50% 0;
+    background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), url("../img/index-background-img.jpg") no-repeat 50% 0, linear-gradient(#474447 302px, white 302px);
   }
 
   @media (min-width: @tablet-width) {
     background: url("../img/index-can-tablet.png") no-repeat 29px 265px;
     padding-top: 64px;
-    padding-left: 86px;
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/index-can-desc.png") no-repeat 63% 32px;
+    background: url("../img/index-can-desc.png") no-repeat 63% 24px;
   }
 }
 
 .adv__block {
   @media (max-width: @mobile-width-only) {
-    background: rgba(104, 183, 56, 0.85);
     min-width: 100%;
-    min-height: 302px;
+    min-height: 166px;
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 749px;
+    min-height: 800px;
+    padding-left: 87px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 500px;
+    min-height: 544px;
     padding-left: 80px;
   }
 }
@@ -35,12 +34,6 @@
 .adv__pic {
   @media (min-width: @tablet-width) {
     display: none;
-  }
-
-  @media (max-width: @mobile-width-only) {
-    position: relative;
-    top: -135px;
-    left: 0;
   }
 }
 
@@ -59,22 +52,18 @@
   width: 244px;
   min-height: 54px;
 
-  @media (min-width: @tablet-width) {
-    position: relative;
-    bottom: 519px;
-    left: -4px;
-  }
-
   @media (max-width: @mobile-width-only) {
     .resize-text(14px, 18px);
     min-width: 100%;
     min-height: 40px;
-    margin-top: -135px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 269px;
-    left: -30px;
+    margin-top: 53px;
   }
 }
 
@@ -101,6 +90,10 @@
       display: none;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+  }
 }
 
 .adv__slogan {
@@ -113,11 +106,10 @@
   margin: 0;
   padding-top: 40px;
 
-
   @media (max-width: @mobile-width-only) {
     .resize-text(14px, 14px);
 
     color: #ffffff;
-    padding-top: 25px;
+    padding: 25px 0 29px;
   }
 }

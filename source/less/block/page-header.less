@@ -3,16 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 76px;
+    height: 78px;
+  }
 
-    &__logo {
-      display: none;
-    }
+  @media (min-width: @desktop-width) {
+    height: 116px;
+  }
+}
 
-    &__logo--2 {
-      display: block;
-      background: url("../img/logo/logo-tablet.svg") no-repeat;
-      width: 174px;
+.page-header__logo {
+  img {
+    width: 100%;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 30px;
     }
   }
 }
