@@ -12,23 +12,27 @@
     top: -5px;
 
     @media (min-width: @tablet-width) {
-      top: 0;
+      width: 40px;
+      height: 40px;
+      top: -6px;
     }
   }
 
   &:checked + label::after {
     content: "";
     position: absolute;
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: #68b738;
     left: 0;
-    transform: translateX(66%) translateY(26%);
+    transform: translateX(58%) translateY(17%);
 
     @media (min-width: @tablet-width) {
-      transform: translateY(66%);
-      left: 8px;
+      width: 18px;
+      height: 18px;
+      transform: translateY(33%);
+      left: 11px;
     }
   }
 }

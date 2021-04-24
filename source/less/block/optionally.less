@@ -1,29 +1,35 @@
 .optionally__container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 19px;
-  padding-left: 46px;
+  row-gap: 24px;
+  padding-left: 28px;
+  padding-top: 1px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 40px;
-    column-gap: 123px;
+    row-gap: 44px;
+    column-gap: 7px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 104px;
+    column-gap: 78px;
+    padding-left: 0;
   }
 }
 
 .optionally__list ~ label {
   .text();
   position: relative;
-  padding-left: 20px;
+  padding-left: 17px;
 
   @media (min-width: @tablet-width) {
     .resize-text(20px, 30px);
-    padding-left: 53px;
+    padding-left: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 59px;
   }
 }
 
@@ -33,16 +39,20 @@
   & + label::before {
     position: absolute;
     content: "";
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #cdcdcd;
-    left: -26px;
+    left: -28px;
     top: -5px;
 
     @media (min-width: @tablet-width) {
       width: 40px;
       height: 40px;
-      left: -6px;
+      left: 12px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 1px;
     }
   }
 
@@ -50,10 +60,14 @@
     content: url("../img/icon/icon-check.svg");
     position: absolute;
     left: -22px;
-    top: 0;
+    top: 1px;
 
     @media (min-width: @tablet-width) {
-      left: 5px;
+      left: 23px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 11px;
     }
   }
 }
