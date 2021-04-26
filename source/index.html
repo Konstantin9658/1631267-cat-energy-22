@@ -106,51 +106,56 @@
       </ol>
     </section>
     <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <div class="example--bcg container">
-          <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="only-desktop"> обычный корм на Cat Energy
-            Slim. Отличный результат<br class="only-desktop"> без изнуряющих тренировок! При этом он не менял своих<br
-              class="only-desktop"> привычек и <br class="only-tab">по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="example__container">
-            <dl class="example__block">
-              <div class="example__results">
-                <dt class="example__annotation">
-                  снижение<br class="only-mobile"> веса
-                </dt>
-                <dd class="example__result">
-                  5 кг
-                </dd>
-              </div>
-              <div class="example__results">
-                <dt class="example__annotation">
-                  затрачено<br class="only-mobile"> времени
-                </dt>
-                <dd class="example__result">
-                  60 дней
-                </dd>
-              </div>
-            </dl>
-            <p class="example__total">Затраты на питание:<br class="only-tab"><span>15 000 руб.</span></p>
-          </div>
+      <h2 class="example__title">Живой пример</h2>
+      <div class="example--bcg container">
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="only-desktop"> обычный корм на Cat Energy
+          Slim. Отличный результат<br class="only-desktop"> без изнуряющих тренировок! При этом он не менял своих<br
+            class="only-desktop"> привычек и <br class="only-tab">по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__container">
+          <dl class="example__block">
+            <div class="example__results">
+              <dt class="example__annotation">
+                снижение<br class="only-mobile"> веса
+              </dt>
+              <dd class="example__result">
+                5 кг
+              </dd>
+            </div>
+            <div class="example__results">
+              <dt class="example__annotation">
+                затрачено<br class="only-mobile"> времени
+              </dt>
+              <dd class="example__result">
+                60 дней
+              </dd>
+            </div>
+          </dl>
+          <p class="example__total">Затраты на питание:<br class="only-tab"><span>15 000 руб.</span></p>
         </div>
-        <div class="example__img">
+      </div>
+      <div class="example__wrapper">
+        <div class="example__diff">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-before-big.png 1x, img/cat-before-big@2x.png 2x">
-            <img class="example__img--active" src="img/cat-before.png" width="311" height="232"
-            alt="Упитанный кот Борис до того как сел на диету Cat Energy">
-            <img class="example__img--disabled" src="img/cat-after.png" width="251" height="240"
-            alt="Стройный кот Борис после двух месяцев диеты от Cat Energy">
+            <source media="(min-width: 768px)" srcset="img/cat-after-big.png 1x, img/cat-after-big@2x.png 2x">
+            <img class="example__after" src="img/cat-after.png" width="251" height="240"
+              alt="Стройный кот Борис после двух месяцев диеты от Cat Energy">
           </picture>
-        </div>
-        <div class="example__diff container">
-          <span class="example__before">Было</span>
-          <div class="example__before-after">
-            <!--Тут потом сделаем переключалку, я так планирую :)-->
+          <div class="example__top">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-big.png 1x, img/cat-before-big@2x.png 2x">
+              <img class="example__before" src="img/cat-before.png" width="311" height="232"
+                alt="Упитанный кот Борис до того как сел на диету Cat Energy">
+            </picture>
           </div>
-          <span class="example__after">Стало</span>
+          <div class="example__controls">
+            <button class="example__btn example__btn--before" type="button" data-value="100">Было</button>
+            <input class="example__input" type="range" min="0" max="100" value="50">
+            <button class="example__btn example__btn--after" type="button" data-value="0">Стало</button>
+          </div>
         </div>
+      </div>
     </section>
     <section class="page-main__footer">
       <article class="collaboration">

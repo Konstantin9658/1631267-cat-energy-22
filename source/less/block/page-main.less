@@ -13,9 +13,9 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   background: #ffffff;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .page-main__form--wrapper {
@@ -27,15 +27,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    padding: 0;
   }
 }
 
 .page-main__wrapper {
-  display: grid;
-
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #ebebeb;
+    padding-bottom: 32px;
   }
 
   @media (min-width: @tablet-width) {
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 67px;
+    padding-bottom: 83px;
   }
 }
 
@@ -70,7 +70,11 @@
 
   @media (min-width: @tablet-width) {
     .resize-text(60px, 60px);
-    padding: 65px 0 54px;
+    padding: 63px 38px 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 0 57px;
   }
 }
 
@@ -104,6 +108,10 @@
     padding-bottom: 66px;
     padding-left: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .page-main__form-group {
@@ -129,7 +137,7 @@
 
 .page-main__form-info .page-main__form-group {
   @media (max-width: @mobile-width-only) {
-    padding-bottom: 14px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -144,8 +152,8 @@
     border: 1px solid #d9d9d9;
     padding-left: 28px;
     width: 100%;
-    height: 200px;
-    margin-bottom: 24px;
+    height: 196px;
+    margin-bottom: 30px;
     margin-top: 52px;
   }
 
@@ -182,11 +190,12 @@
 }
 
 .page-main__form-program .page-main__form-group {
-  display: grid;
-  margin: 22px 0 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 25px;
 
   @media (min-width: @tablet-width) {
-    margin: 35px 0 25px;
+    margin: 29px 0 25px;
   }
 }
 
@@ -194,20 +203,21 @@
   .text();
   color: #222222;
   width: 100%;
-  padding-left: 45px;
+  padding-left: 46px;
   position: relative;
 
   &:not(:last-child) {
-    padding-bottom: 18px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: @tablet-width) {
     .resize-text(20px, 30px);
+    padding-left: 60px;
   }
 }
 
 .page-main__form-block {
-  padding-top: 24px;
+  padding-top: 21px;
 
   @media (min-width: @tablet-width) {
     padding-top: 45px;
@@ -290,17 +300,19 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 34px;
+  margin-top: 41px;
 
   @media (min-width: @tablet-width) {
+    .resize-text(20px, 20px);
     width: 282px;
     min-height: 52px;
-    margin-left: 40px;
-    margin-top: 54px;
+    margin-left: 41px;
+    margin-top: 59px;
   }
 
   @media (min-width: @desktop-width) {
     width: 568px;
+    margin: 66px 0 0;
   }
 }
 
@@ -311,7 +323,7 @@
   font-size: 14px;
   line-height: 16px;
   display: block;
-  padding: 21px 0 32px;
+  padding-top: 16px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
