@@ -59,12 +59,6 @@
   padding-bottom: 23px;
   padding-top: 22px;
 
-  &--main a {
-    @media (min-width: @desktop-width) {
-      color: #ffffff;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     &--current a {
       border-bottom: 2px solid #68b738;
@@ -75,8 +69,14 @@
 
   @media (min-width: @desktop-width) {
     &--current a {
-      // border-color: #ffffff;
       height: 38px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--main a {
+      border-color: #ffffff;
+      color: #ffffff;
     }
   }
 

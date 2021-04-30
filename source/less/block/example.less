@@ -96,7 +96,7 @@
   }
 }
 
-.example--bcg {
+.example__bcg {
   @media (min-width: @desktop-width) {
     margin-top: 76px;
   }
@@ -106,7 +106,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 25px 0 35px;
+  margin: 25px auto 35px;
 
   @media (max-width: @mobile-width-only) {
     max-width: 280px;
@@ -114,7 +114,7 @@
 
   @media (min-width: @tablet-width) {
     width: 366px;
-    margin-top: 55px;
+    margin: 55px 0 35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -267,7 +267,7 @@
       appearance: none;
       width: 100%;
       cursor: pointer;
-      background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+      background: transparent;
       border-color: transparent;
       color: transparent;
     }
@@ -293,24 +293,13 @@
   }
 }
 
-// .example__wrapper {
-//   @media (min-width: @tablet-width) {
-//     background: linear-gradient(#ffffff 220px, #eaeaea 220px);
-//   }
-// }
-
 .example__diff {
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
-  // margin: 23px 0 auto;
-  // width: 100%;
-  // height: 40px;
-  --diff: 50%;
+  --diff: 100%;
   --psevdo-left: 0;
   position: relative;
-  width: 310px;
-  max-width: 310px;
+  width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -321,7 +310,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     top: -84px;
-    right: 17px;
+    right: 11px;
   }
 }
 
@@ -350,6 +339,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 6.7em;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 1.2em 6.7em;
   }
 
   &::after,
@@ -397,6 +390,10 @@
     width: 768px;
     max-width: 768px;
     min-width: 768px;
+  }
+
+  .example__diff {
+    --diff: 50%;
   }
 
   .example__input {
