@@ -1,4 +1,4 @@
-.optionally__container {
+.optionally {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 24px;
@@ -18,41 +18,54 @@
   }
 }
 
-.optionally__list ~ label {
-  .text();
-  position: relative;
-  padding-left: 17px;
-
-  @media (min-width: @tablet-width) {
-    .resize-text(20px, 30px);
-    padding-left: 71px;
+.optionally__input {
+  &:hover + label::before,
+  &:focus-visible + label::before {
+    border-color: #bababa;
   }
 
-  @media (min-width: @desktop-width) {
-    padding-left: 59px;
+  &:hover + label,
+  &:focus-visible + label {
+    color: #bababa;
   }
-}
 
-.optionally__list {
-  display: none;
+  &:disabled + label {
+    opacity: 0.3;
+  }
 
-  & + label::before {
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 30px;
-    border: 1px solid #cdcdcd;
-    left: -28px;
-    top: -5px;
+  & + label {
+    .text();
+    position: relative;
+    padding-left: 17px;
+    cursor: pointer;
 
     @media (min-width: @tablet-width) {
-      width: 40px;
-      height: 40px;
-      left: 12px;
+      .resize-text(20px, 30px);
+      padding-left: 71px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 1px;
+      padding-left: 59px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+      left: -28px;
+      top: -5px;
+
+      @media (min-width: @tablet-width) {
+        width: 40px;
+        height: 40px;
+        left: 12px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: 1px;
+      }
     }
   }
 

@@ -24,6 +24,17 @@
   width: 100%;
   padding-left: 46px;
   position: relative;
+  cursor: pointer;
+
+  // &:hover::before,
+  // &:focus::before {
+  //   border-color: #bababa;
+  // }
+
+  &:hover,
+  &:focus {
+    color: #bababa;
+  }
 
   &:not(:last-child) {
     padding-bottom: 24px;
@@ -36,7 +47,14 @@
 }
 
 .programm-list__radio {
-  display: none;
+  & + label:hover::before,
+  & + label:focus::before {
+    border-color: #bababa;
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 
   & + label::before {
     content: "";
@@ -63,7 +81,7 @@
     border-radius: 50%;
     background-color: #68b738;
     left: 0;
-    transform: translateX(58%) translateY(17%);
+    transform: translateX(58%) translateY(21%);
 
     @media (min-width: @tablet-width) {
       width: 18px;
