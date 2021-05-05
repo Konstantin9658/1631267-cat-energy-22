@@ -7,7 +7,7 @@
   <link rel="icon" href="../favicon.ico">
   <link rel="icon" href="../icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <!-- <link rel="manifest" href="../manifest.webmanifest"> -->
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -20,14 +20,12 @@
           <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
           <img src="img/logo/logo-header-mobile.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
+          <img class="page-header__svg-text" src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта" aria-hidden="true">
         </picture>
-      </a>
-      <a class="page-header__logo" href="#">
-        <!-- <img src="img/logo/logo-header-cat__energy.svg" width="101" height="18" alt="Название сайта"> -->
       </a>
       <button class="page-header__button page-header__button--burger" type="button" aria-label="Открыть меню"></button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
       <div class="main-nav__wrapper main-nav__wrapper--home-page main-nav__menu">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current main-nav__item--main">
@@ -48,14 +46,14 @@
       <div class="adv__block">
         <h1 class="adv__title">Функциональное<br> питание для котов</h1>
         <p class="adv__slogan">Занялся собой? Займись котом!</p>
-        <img class="adv__pic" src="img/index-can.png" width="280" height="270" alt="Пример продукции CAT ENERGY">
-        <a class="adv__button" href="form.html">Подобрать программу</a>
+        <img class="adv__pic" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Пример продукции CAT ENERGY">
+        <a class="button adv__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <article class="nutrition-program container">
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="nutrition-program__wrapper">
-        <div class="nutrition-program__diet nutrition-program__diet-slim">
+        <div class="nutrition-program__diet nutrition-program__diet--slim">
           <h2 class="nutrition-program__title">Похудение</h2>
           <p class="nutrition-program__description">
             Ваш кот весит больше собаки и<br class="only-mobile"> почти утратил<br> способность лазить<br
@@ -66,7 +64,7 @@
             каталог slim
           </a>
         </div>
-        <div class="nutrition-program__diet nutrition-program__diet-weight">
+        <div class="nutrition-program__diet nutrition-program__diet--weight">
           <h2 class="nutrition-program__title">Набор массы</h2>
           <p class="nutrition-program__description">
             Заработать авторитет среди<br class="only-mobile"> дворовых котов<br> и даже собак?<br class="only-mobile">
@@ -107,7 +105,7 @@
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <div class="example--bcg container">
+      <div class="example__bcg container">
         <p class="example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="only-desktop"> обычный корм на Cat Energy
           Slim. Отличный результат<br class="only-desktop"> без изнуряющих тренировок! При этом он не менял своих<br
@@ -138,12 +136,14 @@
       <div class="example__wrapper">
         <div class="example__diff">
           <picture>
+            <source media="(min-width: 1280px)" srcset="img/cat-after-big-desktop.png 1x, img/cat-after-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/cat-after-big.png 1x, img/cat-after-big@2x.png 2x">
             <img class="example__after" src="img/cat-after.png" width="251" height="240"
               alt="Стройный кот Борис после двух месяцев диеты от Cat Energy">
           </picture>
           <div class="example__top">
             <picture>
+              <source media="(min-width: 1280px)" srcset="img/cat-before-big-desktop.png 1x, img/cat-before-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/cat-before-big.png 1x, img/cat-before-big@2x.png 2x">
               <img class="example__before" src="img/cat-before.png" width="311" height="232"
                 alt="Упитанный кот Борис до того как сел на диету Cat Energy">

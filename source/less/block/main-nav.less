@@ -59,10 +59,13 @@
   padding-bottom: 23px;
   padding-top: 22px;
 
-  &--main a {
-    @media (min-width: @desktop-width) {
-      color: #ffffff;
-    }
+  a:hover,
+  a:focus-visible {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
@@ -75,8 +78,14 @@
 
   @media (min-width: @desktop-width) {
     &--current a {
-      // border-color: #ffffff;
       height: 38px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--main a {
+      border-color: #ffffff;
+      color: #ffffff;
     }
   }
 
@@ -102,20 +111,13 @@
     &:not(:last-child) {
       margin-right: 35px;
       margin-bottom: 4px;
-
-      @media (min-width: @desktop-width) {
-        margin-bottom: 8px;
-      }
     }
   }
-}
 
-// .main-nav__item--main a {
-//   @media (min-width: @desktop-width) {
-//     color: #ffffff;
-//     border-color: #ffffff;
-//   }
-// }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 8px;
+  }
+}
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;

@@ -12,21 +12,42 @@
 }
 
 .page-header__logo {
-  img {
-    width: 100%;
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
 
-    @media (min-width: @tablet-width) {
-      margin-top: 30px;
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+
+    img {
+      width: 100%;
     }
   }
 }
 
 .page-header__wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   min-height: 66px;
+}
+
+.page-header__svg-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__button {

@@ -1,4 +1,30 @@
-.contact label {
+.contact-list {
+  @media (min-width: @tablet-width) {
+    margin: 0 35px 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    margin: 0;
+  }
+}
+
+.contact-list__item {
+  display: flex;
+  align-items: baseline;
+
+  &:not(:last-child) {
+    padding-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.contact-list label {
   .text();
   color: #444444;
   width: auto;
@@ -10,13 +36,21 @@
   }
 }
 
-.contact input {
+.contact-list__input {
   .text();
   color: #444444;
   border: 1px solid #e7e7e7;
   min-height: 45px;
   flex-grow: 1;
   padding: 13px 15px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
 
   @media (min-width: @tablet-width) {
     .resize-text(20px, 30px);
