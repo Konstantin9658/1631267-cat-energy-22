@@ -26,16 +26,6 @@
   position: relative;
   cursor: pointer;
 
-  // &:hover::before,
-  // &:focus::before {
-  //   border-color: #bababa;
-  // }
-
-  &:hover,
-  &:focus {
-    color: #bababa;
-  }
-
   &:not(:last-child) {
     padding-bottom: 24px;
   }
@@ -47,9 +37,14 @@
 }
 
 .programm-list__radio {
-  & + label:hover::before,
-  & + label:focus::before {
+  &:hover + label::before,
+  &:focus-visible + label::before {
     border-color: #bababa;
+  }
+
+  &:hover + label,
+  &:focus-visible + label {
+    color: #bababa;
   }
 
   &:disabled + label {
