@@ -51,16 +51,16 @@
   flex-grow: 1;
   outline: none;
 
+  @media (min-width: @tablet-width) {
+    .resize-text(20px, 30px);
+    min-height: 52px;
+  }
+
   &:hover {
     border-color: #cdcdcd;
   }
 
   &:focus {
     border: 2px solid #444444;
-  }
-
-  @media (min-width: @tablet-width) {
-    .resize-text(20px, 30px);
-    min-height: 52px;
   }
 }

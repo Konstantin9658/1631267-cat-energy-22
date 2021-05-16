@@ -1,14 +1,4 @@
 .button {
-  &:hover,
-  &:focus-visible {
-    background-color: #5eaa2f;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:active {
-    color: fade(#ffffff, 30%);
-  }
-
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
@@ -33,5 +23,15 @@
       grid-column-start: 3;
       align-self: center;
     }
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #5eaa2f;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30%);
   }
 }
