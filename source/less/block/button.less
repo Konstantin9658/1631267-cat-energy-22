@@ -1,28 +1,13 @@
 .button {
-  &:hover,
-  &:focus-visible {
-    background-color: #5eaa2f;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:active {
-    color: fade(#ffffff, 30%);
-  }
-
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
+  .resize-text(16px, 20px);
   text-transform: uppercase;
-  // margin-top: 8px;
-
   height: 40px;
   background-color: #68b738;
   color: #ffffff;
-  // grid-column-start: 1;
-  // grid-column-end: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .flex-center(flex, center);
 
   &--add {
     margin-top: 8px;
@@ -33,9 +18,20 @@
     }
 
     @media (min-width: @desktop-width) {
+      margin: 0;
       width: 244px;
       grid-column-start: 3;
       align-self: center;
     }
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #5eaa2f;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30%);
   }
 }

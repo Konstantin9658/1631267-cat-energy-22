@@ -20,12 +20,22 @@
 }
 
 .page-main__form input {
+  @error: #ff8282;
+
   &:invalid:not(:placeholder-shown) {
-    border-color: #ff8282;
+    border-color: @error;
+
+    & + svg {
+      --basic-green: @error;
+    }
   }
 
   &:valid:not(:placeholder-shown) {
     border-color: #68b738;
+
+    & + svg {
+      --basic-green: #68b738;
+    }
   }
 }
 
@@ -261,6 +271,10 @@
     grid-column-start: 1;
     grid-column-end: -1;
   }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
 }
 
 .page-main__form-button {
@@ -284,6 +298,8 @@
     min-height: 52px;
     margin-left: 41px;
     margin-top: 59px;
+    display: inline-block;
+    vertical-align: sub;
   }
 
   @media (min-width: @desktop-width) {

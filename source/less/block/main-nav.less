@@ -18,6 +18,22 @@
       right: 0;
       z-index: -1;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/index-background-img-desktop.jpg") no-repeat, linear-gradient(#3e3e45 693px, white 693px);
+      top: 0;
+      right: 0;
+      width: 50vw;
+      height: 693px;
+      z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index-background-img-desktop@2x.jpg") no-repeat, linear-gradient(#3e3e45 693px, white 693px);
+        background-size: auto 693px;
+      }
+    }
   }
 }
 

@@ -6,10 +6,41 @@
   align-items: center;
   justify-content: space-between;
   width: 130px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 26px;
+    margin-bottom: 10px;
+    width: 131px;
+  }
 }
 
-.social__icon svg {
+.social__icon {
+  width: 23px;
+  height: 22px;
+
   @media (min-width: @tablet-width) {
-    transform: scale(1.34);
+    width: 30px;
+    height: 33px;
   }
+}
+
+.social__icon-small {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.social__icon-big {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.social__link:hover .social__icon,
+.social__link:focus-visible .social__icon {
+  --basic-green: #68b738;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }
