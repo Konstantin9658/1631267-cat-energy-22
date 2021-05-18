@@ -18,23 +18,27 @@ btnHeader.addEventListener('click', function () {
 );
 
 const input = document.querySelector('.example__input');
-const buttons = document.querySelectorAll('.example__btn');
-const diff = document.querySelector('.example__diff');
 
-input.addEventListener('input', function (evt) {
-  const value = (100 - input.value) + '%'
-  diff.style.setProperty('--diff', value);
-})
+if (input) {
 
-for (btn of buttons) {
-  btn.addEventListener('click', (evt) => {
-    const btnDataValue = evt.target.dataset.value
-    if (btnDataValue > 0) {
-      diff.style.setProperty('--psevdo-left', '0');
-    } else {
-      diff.style.setProperty('--psevdo-left', '35px');
-    }
-    diff.style.setProperty('--diff', btnDataValue + '%');
-    input.value = (100 - btnDataValue);
+  const buttons = document.querySelectorAll('.example__btn');
+  const diff = document.querySelector('.example__diff');
+
+  input.addEventListener('input', function (evt) {
+    const value = (100 - input.value) + '%'
+    diff.style.setProperty('--diff', value);
   })
+
+  for (btn of buttons) {
+    btn.addEventListener('click', (evt) => {
+      const btnDataValue = evt.target.dataset.value
+      if (btnDataValue > 0) {
+        diff.style.setProperty('--psevdo-left', '0');
+      } else {
+        diff.style.setProperty('--psevdo-left', '35px');
+      }
+      diff.style.setProperty('--diff', btnDataValue + '%');
+      input.value = (100 - btnDataValue);
+    })
+  }
 }
