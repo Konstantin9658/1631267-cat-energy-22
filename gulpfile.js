@@ -8,7 +8,7 @@ const imagemin = require("gulp-imagemin-fix");
 const webp = require("gulp-webp");
 const del = require("del");
 const rename = require("gulp-rename");
-const csso = require("gulp-csso");
+const csso = require("postcss-csso");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -20,10 +20,11 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    // .pipe(postcss([
-    //   autoprefixer()
-    // ]))
-    // .pipe(csso())
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -116,7 +117,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source"
+      baseDir: "build"
     },
     cors: true,
     notify: false,
