@@ -8,6 +8,7 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
 </head>
@@ -21,8 +22,9 @@
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
           <img src="img/logo/logo-header-mobile.svg" width="34" height="38" alt="Логотип сайта CAT ENERGY">
         </picture>
-        <img class="page-header__svg-text" src="img/logo/logo-header-cat__energy.svg" width="101" height="18"
-          alt="Название сайта" aria-hidden="true">
+        <svg class="page-header__svg-text" width="101" height="18" role="img" aria-label="Название сайта">
+          <use xlink:href="img/sprite.svg#logo-svg-text"></use>
+        </svg>
       </a>
       <button class="page-header__button page-header__button--burger" type="button" aria-label="Открыть меню"></button>
     </div>
@@ -350,8 +352,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
               <svg class="social__icon" role="img" aria-label="Логотип ВКонтакте">
-                <use class="social__icon-small" xlink:href="img/sprite.svg#icon-vkontakte"></use>
-                <use class="social__icon-big" xlink:href="img/sprite.svg#icon-vkontakte-big"></use>
+                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
@@ -359,8 +360,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Instagram</span>
               <svg class="social__icon" role="img" aria-label="Логотип Instagram">
-                <use class="social__icon-small" xlink:href="img/sprite.svg#icon-instagram"></use>
-                <use class="social__icon-big" xlink:href="img/sprite.svg#icon-instagram-big"></use>
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -368,8 +368,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Facebook</span>
               <svg class="social__icon" role="img" aria-label="Логотип Facebook">
-                <use class="social__icon-small" xlink:href="img/sprite.svg#icon-facebook"></use>
-                <use class="social__icon-big" xlink:href="img/sprite.svg#icon-facebook-big"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>

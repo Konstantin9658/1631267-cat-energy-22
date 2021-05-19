@@ -20,17 +20,15 @@
 }
 
 .page-main__form input {
-  @error: #ff8282;
-
-  &:invalid:not(:placeholder-shown) {
-    border-color: @error;
+  &:invalid:not(:placeholder-shown/* autoprefixer: off */) {
+    border-color: #ff8282;
 
     & + svg {
-      --basic-green: @error;
+      --basic-green: #ff8282;
     }
   }
 
-  &:valid:not(:placeholder-shown) {
+  &:valid:not(:placeholder-shown/* autoprefixer: off */) {
     border-color: #68b738;
 
     & + svg {

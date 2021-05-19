@@ -9,6 +9,7 @@ const webp = require("gulp-webp");
 const del = require("del");
 const rename = require("gulp-rename");
 const csso = require("postcss-csso");
+const svgstore = require("gulp-svgstore");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -21,7 +22,7 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer(),
+      // autoprefixer(),
       csso()
     ]))
     .pipe(rename("style.min.css"))
@@ -36,7 +37,7 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(htmlmin())
   .pipe(gulp.dest("build"));
 }
 
@@ -85,6 +86,19 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/sprite-icons/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.sprite = sprite;
 
 // Copy
 
@@ -148,6 +162,7 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
+  sprite,
   optimizeImages,
   gulp.parallel(
     styles,

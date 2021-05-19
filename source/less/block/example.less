@@ -26,11 +26,15 @@
       position: absolute;
       left: 0;
       right: 0;
-      width: 49%;
+      width: 73.4%;
       height: 464px;
       top: 135px;
       background-color: #f2f2f2;
       z-index: -1;
+
+      @media (min-width: 1440px) {
+        width: 72.4%;
+      }
     }
   }
 }
@@ -383,7 +387,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 2.1em 3.8em;
+    padding: 2.1em 4.2em;
+    margin-left: 22px;
   }
 
   &::after,
