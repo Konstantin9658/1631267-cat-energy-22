@@ -27,6 +27,14 @@
   }
 }
 
+// .card__name-shift {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//     display: block;
+//   }
+// }
+
 .card__name {
   text-align: left;
   font-family: @oswald;
@@ -39,7 +47,11 @@
   padding-bottom: 6px;
   letter-spacing: -0.1px;
 
-  .only-medium {
+  // .only-medium {
+  //   display: none;
+  // }
+
+  &--shift {
     display: none;
   }
 
@@ -48,11 +60,11 @@
     text-align: center;
     padding-top: 28px;
 
-    br {
+    &--only-mobile {
       display: none;
     }
 
-    .only-medium {
+    &--shift {
       display: block;
     }
   }
@@ -61,6 +73,8 @@
     padding-top: 43px;
   }
 }
+
+
 
 .card__pic {
   grid-row-start: 1;

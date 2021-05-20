@@ -8,7 +8,7 @@
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
 </head>
@@ -60,7 +60,7 @@
               <img src="img/catalog/catalog-chicken-small.png" srcset="img/catalog/catalog-chicken-small@2x.png 2x" width="140" height="112"
                 alt="Корм CAT ENERGY со вкусом Курицы. Массой 500 гр.">
             </picture>
-            <h2 class="card__name">Cat Energy<br> PRO<br class="only-medium"> 500 г</h2>
+            <h2 class="card__name">Cat Energy<br class="card__name--only-mobile"> PRO<br class="card__name--shift"> 500 г</h2>
             <table class="product-info">
               <tr class="product-info__row">
                 <td>Масса</td>
@@ -88,7 +88,7 @@
               <img src="img/catalog/catalog-chicken-big.png" srcset="img/catalog/catalog-chicken-big@2x.png 2x" width="140" height="112"
                 alt="Корм CAT ENERGY со вкусом Курицы. Массой 1 кг.">
             </picture>
-            <h2 class="card__name">Cat Energy<br> PRO<br class="only-medium"> 1000 г</h2>
+            <h2 class="card__name">Cat Energy<br class="card__name--only-mobile"> PRO<br class="card__name--shift"> 1000 г</h2>
             <table class="product-info">
               <tr class="product-info__row">
                 <td>Масса</td>
@@ -116,7 +116,7 @@
               <img src="img/catalog/catalog-fish-small.png" srcset="img/catalog/catalog-fish-small@2x.png 2x" width="140" height="112"
                 alt="Корм CAT ENERGY со вкусом Рыбы. Массой 500 гр.">
             </picture>
-            <h2 class="card__name">Cat Energy<br> PRO<br class="only-medium"> 500 г</h2>
+            <h2 class="card__name">Cat Energy<br class="card__name--only-mobile"> PRO<br class="card__name--shift"> 500 г</h2>
             <table class="product-info">
               <tr class="product-info__row">
                 <td>Масса</td>
@@ -144,7 +144,7 @@
               <img src="img/catalog/catalog-fish-big.png" srcset="img/catalog/catalog-fish-big@2x.png 2x" width="140" height="112"
                 alt="Корм CAT ENERGY со вкусом Рыбы. Массой 1 кг.">
             </picture>
-            <h2 class="card__name">Cat Energy<br> PRO<br class="only-medium"> 1000 г</h2>
+            <h2 class="card__name">Cat Energy<br class="card__name--only-mobile"> PRO<br class="card__name--shift"> 1000 г</h2>
             <table class="product-info">
               <tr class="product-info__row">
                 <td>Масса</td>
@@ -172,7 +172,7 @@
               <img src="img/catalog/catalog-buckwheat-small.png" srcset="img/catalog/catalog-buckwheat-small@2x.png 2x" width="140" height="112"
                 alt="Корм CAT ENERGY со вкусом Гречки. Массой 500 гр.">
             </picture>
-            <h2 class="card__name">Cat Energy<br> Slim<br class="only-medium"> 500 г</h2>
+            <h2 class="card__name">Cat Energy<br class="card__name--only-mobile"> Slim<br class="card__name--shift"> 500 г</h2>
             <table class="product-info">
               <tr class="product-info__row">
                 <td>Масса</td>
@@ -200,7 +200,7 @@
               <img src="img/catalog/catalog-buckwheat-big.png" srcset="img/catalog/catalog-buckwheat-big@2x.png 2x" width="140" height="112"
                 alt="Корм CAT ENERGY со вкусом Гречки. Массой 1 кг.">
             </picture>
-            <h2 class="card__name">Cat Energy<br> Slim<br class="only-medium"> 1000 г</h2>
+            <h2 class="card__name">Cat Energy<br class="card__name--only-mobile"> Slim<br class="card__name--shift"> 1000 г</h2>
             <table class="product-info">
               <tr class="product-info__row">
                 <td>Масса</td>
@@ -228,7 +228,7 @@
               <img src="img/catalog/catalog-rice-small.png" srcset="img/catalog/catalog-rice-small@2x.png 2x" width="140" height="112"
                 alt="Корм CAT ENERGY со вкусом Риса. Массой 500 гр.">
             </picture>
-            <h2 class="card__name">Cat Energy<br> Slim<br class="only-medium"> 500 г</h2>
+            <h2 class="card__name">Cat Energy<br class="card__name--only-mobile"> Slim<br class="card__name--shift"> 500 г</h2>
             <table class="product-info">
               <tr class="product-info__row">
                 <td>Масса</td>
@@ -248,8 +248,8 @@
         </div>
         <div class="wrapper__inner">
           <div class="show-more container">
-            <h2 class="show-more__title">Показать еще<br class="only-medium"> 100500 товаров</h2>
-            <p class="show-more__desc">На самом деле вкусов<br class="only-medium"> гораздо больше!</p>
+            <h2 class="show-more__title">Показать еще<br class="show-more__shift"> 100500 товаров</h2>
+            <p class="show-more__desc">На самом деле вкусов<br class="show-more__shift"> гораздо больше!</p>
             <a class="button show-more__link" href="#">Показать все</a>
           </div>
         </div>
@@ -351,7 +351,7 @@
           <li class="social__list-item">
             <a class="social__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg class="social__icon" role="img" aria-label="Логотип ВКонтакте">
+              <svg class="social__icon" role="img" width="30" height="33" aria-label="Логотип ВКонтакте">
                 <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
@@ -359,7 +359,7 @@
           <li class="social__list-item">
             <a class="social__link" href="#">
               <span class="visually-hidden">Instagram</span>
-              <svg class="social__icon" role="img" aria-label="Логотип Instagram">
+              <svg class="social__icon" role="img" width="30" height="33" aria-label="Логотип Instagram">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -367,7 +367,7 @@
           <li class="social__list-item">
             <a class="social__link" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg class="social__icon" role="img" aria-label="Логотип Facebook">
+              <svg class="social__icon" role="img" width="30" height="33" aria-label="Логотип Facebook">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>

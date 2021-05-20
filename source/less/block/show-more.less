@@ -59,17 +59,9 @@
   margin: 0;
   color: #111111;
 
-  .only-medium {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
     .resize-text(20px, 22px);
     margin-top: 38px;
-
-    .only-medium {
-      display: block;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -86,20 +78,19 @@
   text-align: center;
   color: #444444;
   margin: 0 0 20px;
-  // padding-bottom: 21px;
-
-  .only-medium {
-    display: none;
-  }
 
   @media (min-width: @tablet-width) {
     margin: 15px 0 10px;
     flex-grow: 1;
     .resize-text(16px, 18px);
+  }
+}
 
-    .only-medium {
-      display: block;
-    }
+.show-more__shift {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
