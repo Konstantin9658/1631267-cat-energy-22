@@ -49,8 +49,11 @@
       <div class="adv__block">
         <h1 class="adv__title">Функциональное<br> питание для котов</h1>
         <p class="adv__slogan">Занялся собой? Займись котом!</p>
-        <img class="adv__pic" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280"
+        <picture>
+          <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
+          <img class="adv__pic" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280"
           height="270" alt="Пример продукции CAT ENERGY">
+        </picture>
         <a class="button adv__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -63,9 +66,9 @@
           </svg>
           <h2 class="nutrition-program__title">Похудение</h2>
           <p class="nutrition-program__description">
-            Ваш кот весит больше собаки и<br class="only-mobile"> почти утратил<br> способность лазить<br
-              class="only-mobile"> по деревьям? Пора на диету!<br> Cat<br class="only-mobile">
-            Energy Slim поможет вашему<br class="only-mobile"> питомцу<br> сбросить лишний вес.
+            Ваш кот весит больше собаки и<br class="nutrition-program__description-shift"> почти утратил<br> способность лазить<br
+              class="nutrition-program__description-shift"> по деревьям? Пора на диету!<br> Cat<br class="nutrition-program__description-shift">
+            Energy Slim поможет вашему<br class="nutrition-program__description-shift"> питомцу<br> сбросить лишний вес.
           </p>
           <a class="nutrition-program__link" href="catalog.html">
             каталог slim
@@ -77,9 +80,9 @@
           </svg>
           <h2 class="nutrition-program__title nutrition-program__title--weight">Набор массы</h2>
           <p class="nutrition-program__description">
-            Заработать авторитет среди<br class="only-mobile"> дворовых котов<br> и даже собак?<br class="only-mobile">
+            Заработать авторитет среди<br class="nutrition-program__description-shift"> дворовых котов<br> и даже собак?<br class="nutrition-program__description-shift">
             Серия Cat Energy Pro поможет<br> вашему коту
-            нарастить<br class="only-mobile"> необходимые<br> мышцы!
+            нарастить<br class="nutrition-program__description-shift"> необходимые<br> мышцы!
           </p>
           <a class="nutrition-program__link" href="catalog.html">
             каталог pro
@@ -107,7 +110,7 @@
         </li>
         <li class="features__item features__item--alarm">
           <p class="features__description">
-            Уже через месяц<br class="only-mobile"> наслаждайтесь<br> изменениями<br class="only-mobile"> к лучшему<br>
+            Уже через месяц<br class="features__description--shift"> наслаждайтесь<br> изменениями<br class="features__description--shift"> к лучшему<br>
             вашего питомца!
           </p>
         </li>
@@ -117,15 +120,15 @@
       <h2 class="example__title">Живой пример</h2>
       <div class="example__bcg container">
         <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="only-desktop"> обычный корм на Cat Energy
-          Slim. Отличный результат<br class="only-desktop"> без изнуряющих тренировок! При этом он не менял своих<br
-            class="only-desktop"> привычек и <br class="only-tab">по-прежнему спит по 16 часов в день.
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="example__description--shift-desktop"> обычный корм на Cat Energy
+          Slim. Отличный результат<br class="example__description--shift-desktop"> без изнуряющих тренировок! При этом он не менял своих<br
+            class="example__description--shift-desktop"> привычек и <br class="example__description--shift-tab">по-прежнему спит по 16 часов в день.
         </p>
         <div class="example__container">
           <dl class="example__block">
             <div class="example__results">
               <dt class="example__annotation">
-                снижение<br class="only-mobile"> веса
+                снижение<br class="example__annotation--shift"> веса
               </dt>
               <dd class="example__result">
                 5 кг
@@ -133,32 +136,34 @@
             </div>
             <div class="example__results">
               <dt class="example__annotation">
-                затрачено<br class="only-mobile"> времени
+                затрачено<br class="example__annotation--shift"> времени
               </dt>
               <dd class="example__result">
                 60 дней
               </dd>
             </div>
           </dl>
-          <p class="example__total">Затраты на питание:<br class="only-tab"><span>15 000 руб.</span></p>
+          <p class="example__total">Затраты на питание:<br class="example__total--shift"><span>15 000 руб.</span></p>
         </div>
       </div>
       <div class="example__wrapper">
         <div class="example__diff">
           <picture>
-            <source media="(min-width: 1280px)"
-              srcset="img/cat-after-big-desktop.png 1x, img/cat-after-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/cat-after-big-tablet.png 1x, img/cat-after-big-tablet@2x.png 2x">
+            <source media="(min-width: 1280px)" type="image/webp" srcset="img/cat-after-big-desktop.webp 1x, img/cat-after-big-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-after-big-tablet.webp 1x, img/cat-after-big-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/cat-after-big-desktop.png 1x, img/cat-after-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/cat-after-big-tablet.png 1x, img/cat-after-big-tablet@2x.png 2x">
             <img class="example__after" src="img/cat-after.png" srcset="img/cat-after@2x.png 2x" width="251"
               height="240" alt="Стройный кот Борис после двух месяцев диеты от Cat Energy">
           </picture>
           <div class="example__top">
             <picture>
-              <source media="(min-width: 1280px)"
-                srcset="img/cat-before-big-desktop.png 1x, img/cat-before-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/cat-before-big-tablet.png 1x, img/cat-before-big-tablet@2x.png 2x">
+              <source media="(min-width: 1280px)" type="image/webp" srcset="img/cat-before-big-desktop.webp 1x, img/cat-before-big-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-before-big-tablet.webp 1x, img/cat-before-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x">
+              <source media="(min-width: 1280px)" srcset="img/cat-before-big-desktop.png 1x, img/cat-before-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-before-big-tablet.png 1x, img/cat-before-big-tablet@2x.png 2x">
               <img class="example__before" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="311"
                 height="232" alt="Упитанный кот Борис до того как сел на диету Cat Energy">
             </picture>
