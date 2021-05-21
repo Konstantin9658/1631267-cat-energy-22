@@ -3,6 +3,7 @@ const mainNavMenu = document.querySelector('.main-nav__menu');
 const mainNav =  document.querySelector('.main-nav');
 
 mainNav.classList.remove('main-nav--nojs');
+btnHeader.classList.remove('page-header__button--nojs');
 
 btnHeader.addEventListener('click', function () {
   if (btnHeader.classList.contains('page-header__button--burger')) {

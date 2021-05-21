@@ -26,7 +26,7 @@
           <use xlink:href="img/sprite.svg#logo-svg-text"></use>
         </svg>
       </a>
-      <button class="page-header__button page-header__button--burger" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__button page-header__button--burger page-header__button--nojs" type="button" aria-label="Открыть меню"></button>
     </div>
     <nav class="main-nav main-nav--nojs">
       <div class="main-nav__wrapper main-nav__menu">
@@ -53,7 +53,7 @@
       <form class="page-main__form" action="https://echo.htmlacademy.ru/" method="POST">
         <section class="page-main__form-info">
           <h3 class="visually-hidden">Информация о вашем питомце</h3>
-          <fieldset class="page-main__form-group">
+          <fieldset class="fieldset page-main__form-group">
             <div class="info-list">
               <div class="info-list__item">
                 <label for="pet-name-field">
@@ -80,7 +80,7 @@
 
           <div class="page-main__form-programm">
             <h3 class="visually-hidden">Выбор программы</h3>
-            <fieldset class="page-main__form-group">
+            <fieldset class="fieldset page-main__form-group">
               <div class="programm-list">
                 <input class="visually-hidden programm-list__radio" type="radio" name="program-option" value="Похудение"
                   id="weight-loss-field" checked>
@@ -102,7 +102,7 @@
           </div>
         </section>
         <div class="page-main__form-block page-main__form-block--contact">
-          <fieldset class="page-main__form-group container">
+          <fieldset class="fieldset page-main__form-group container">
             <legend class="page-main__form-block-caption">
               Контактные данные<br> (владельца кота)
             </legend>
@@ -131,7 +131,7 @@
           </fieldset>
         </div>
         <div class="page-main__form-block page-main__form-block--comment">
-          <fieldset class="page-main__form-group container">
+          <fieldset class="fieldset page-main__form-group container">
             <legend class="page-main__form-block-caption">
               <label for="comment-field">Комментарий</label>
             </legend>
@@ -141,7 +141,7 @@
           </fieldset>
         </div>
         <div class="page-main__form-block page-main__form-block--optionally">
-          <fieldset class="page-main__form-group container">
+          <fieldset class="fieldset page-main__form-group container">
             <legend class="page-main__form-block-caption page-main__form-block-caption--optionally">
               Дополнительно
             </legend>
