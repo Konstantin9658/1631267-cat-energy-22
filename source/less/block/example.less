@@ -1,4 +1,4 @@
-@example-bcg-grey: #eaeaea;
+@example-bcg-grey: #f2f2f2;
 @example-bcg-tab: #ffffff;
 
 .example {
@@ -20,22 +20,6 @@
     position: relative;
     min-height: 599px;
     z-index: 3;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      width: 73.4%;
-      height: 464px;
-      top: 135px;
-      background-color: #f2f2f2;
-      z-index: -1;
-
-      @media (min-width: 1440px) {
-        width: 72.4%;
-      }
-    }
   }
 }
 
@@ -390,11 +374,11 @@
   left: 0;
   width: var(--diff, 50%);
   overflow-x: hidden;
-  background-color: #eaeaea;
+  background-color: @example-bcg-grey;
   transition: all 0.3s ease-in-out;
 
   @media (min-width: @tablet-width) {
-    background: linear-gradient(#ffffff 173px, #eaeaea 173px);
+    background: linear-gradient(#ffffff 173px, @example-bcg-grey 173px);
   }
 
   @media (min-width: @desktop-width) {
