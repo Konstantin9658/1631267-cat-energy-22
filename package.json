@@ -8,6 +8,7 @@
     "browser-sync": "2.26.14",
     "del": "^6.0.0",
     "gulp": "4.0.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-imagemin-fix": "^5.0.4",
@@ -48,5 +49,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "gift": "^0.10.2"
   }
 }
